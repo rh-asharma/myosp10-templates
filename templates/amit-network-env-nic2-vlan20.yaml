@@ -7,7 +7,7 @@ resource_registry:
   OS::TripleO::Compute::Net::SoftwareConfig:
     /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/controller-no-external.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/controller.yaml
   OS::TripleO::ObjectStorage::Net::SoftwareConfig:
     /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/noop.yaml
   OS::TripleO::CephStorage::Net::SoftwareConfig:
