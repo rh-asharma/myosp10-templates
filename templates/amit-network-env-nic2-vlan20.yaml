@@ -3,7 +3,8 @@
 resource_registry:
   # Network Interface templates to use (these files must exist)
   OS::TripleO::BlockStorage::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/cinder-storage.yaml
+    #/home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/cinder-storage.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/noop.yaml
   OS::TripleO::Compute::Net::SoftwareConfig:
     /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig:
