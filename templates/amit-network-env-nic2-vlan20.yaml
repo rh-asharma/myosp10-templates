@@ -3,15 +3,15 @@
 resource_registry:
   # Network Interface templates to use (these files must exist)
   OS::TripleO::BlockStorage::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlans/cinder-storage.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/cinder-storage.yaml
   OS::TripleO::Compute::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlans/compute.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlans/controller-no-external.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/controller-no-external.yaml
   OS::TripleO::ObjectStorage::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlans/noop.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/noop.yaml
   OS::TripleO::CephStorage::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/single-nic-vlans/noop.yaml
+    /home/stack/myosp10-templates/templates/single-nic-vlan20-nic2/noop.yaml
 
 parameter_defaults:
   # This section is where deployment-specific configuration is done
@@ -31,7 +31,7 @@ parameter_defaults:
   #StorageNetworkVlanID: 30
   #StorageMgmtNetworkVlanID: 40
   #TenantNetworkVlanID: 50
-  #ExternalNetworkVlanID: 20
+  ExternalNetworkVlanID: 20
   # Customize the IP ranges on each network to use for static IPs and VIPs
   #InternalApiAllocationPools: [{'start': '172.17.0.10', 'end': '172.17.0.200'}]
   #StorageAllocationPools: [{'start': '172.18.0.10', 'end': '172.18.0.200'}]
