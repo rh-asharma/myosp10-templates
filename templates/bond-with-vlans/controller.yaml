@@ -127,6 +127,7 @@ resources:
                       type: interface
                       name: nic1
                       primary: true
+                -                      
                   type: vlan
                   device: bond1
                   vlan_id: {get_param: ExternalNetworkVlanID}
