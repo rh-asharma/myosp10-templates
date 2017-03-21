@@ -97,7 +97,7 @@ resources:
                   next_hop: {get_param: EC2MetadataIp}
             -
               type: ovs_bridge
-              name: {get_input: bridge_name}
+              name: br-ex
               use_dhcp: false
               dns_servers: {get_param: DnsServers}
               addresses:
