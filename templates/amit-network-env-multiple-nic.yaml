@@ -3,11 +3,11 @@
 resource_registry:
   # Network Interface templates to use (these files must exist)
   OS::TripleO::BlockStorage::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/multiple-nics/cinder-storage.yaml
+    /home/stack/myosp10-templates/templates/bond-with-vlans/cinder-storage.yaml
   OS::TripleO::Compute::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/multiple-nics/compute.yaml
+    /home/stack/myosp10-templates/templates/bond-with-vlans/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig:
-    /home/stack/myosp10-templates/templates/multiple-nics/controller.yaml
+    /home/stack/myosp10-templates/templates/bond-with-vlans/controller.yaml
   OS::TripleO::ObjectStorage::Net::SoftwareConfig:
     /home/stack/myosp10-templates/templates/single-nic-vlans/noop.yaml
   OS::TripleO::CephStorage::Net::SoftwareConfig:
