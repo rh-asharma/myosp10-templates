@@ -113,7 +113,7 @@ resources:
                   name: nic2
                   use_dhcp: false
                   # force the MAC address of the bridge to this interface
-                  primary: true
+                  #primary: true
             -
               type: interface
               name: nic3
