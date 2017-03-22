@@ -91,7 +91,7 @@ resources:
             -
               type: interface
               name: nic1
-              use_dhcp: false
+              use_dhcp: true
               addresses:
               -
                 ip_netmask:
@@ -106,7 +106,7 @@ resources:
             -
               type: ovs_bridge
               name: br-ex
-              use_dhcp: false
+              use_dhcp: true
               dns_servers: {get_param: DnsServers}
               addresses:
                 -
