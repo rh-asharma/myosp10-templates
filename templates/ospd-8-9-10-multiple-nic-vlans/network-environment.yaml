@@ -70,7 +70,7 @@ parameter_defaults:
   StorageNetworkVlanID: 300
   StorageMgmtNetworkVlanID: 400
   TenantNetworkVlanID: 500
-  #ExternalNetworkVlanID: 20
+  ExternalNetworkVlanID: 600
   
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
