@@ -1,6 +1,8 @@
-Software Config to drive os-net-config to configure VLANs for the  
-  controller role.  
-  
+heat_template_version: 2015-04-30
+
+description: >
+  Software Config to drive os-net-config to configure VLANs for the
+  controller role.
   
 parameters:  
   ExternalIpSubnet:  
