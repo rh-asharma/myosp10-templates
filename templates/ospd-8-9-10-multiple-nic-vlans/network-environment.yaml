@@ -42,26 +42,38 @@ resource_registry:
 
 parameter_defaults:
   # Customize all these values to match the local environment
-  InternalApiNetCidr: 10.10.10.0/24
-  TenantNetCidr: 10.10.2.0/24
-  ExternalNetCidr: 172.20.12.112/28
+  InternalApiNetCidr: 172.17.0.0/24
+  StorageNetCidr: 172.18.0.0/24
+  StorageMgmtNetCidr: 172.19.0.0/24
+  TenantNetCidr: 172.16.0.0/24
+  ExternalNetCidr: 192.16.20.0/24
+  
   # CIDR subnet mask length for provisioning network
   ControlPlaneSubnetCidr: '24'
-  InternalApiAllocationPools: [{'start': '10.10.10.10', 'end': '10.10.10.200'}]
-  TenantAllocationPools: [{'start': '172.10.2.100', 'end': '172.10.2.200'}]
-  # Use an External allocation pool which will leave room for floating IPs
-  ExternalAllocationPools: [{'start': '172.20.12.114', 'end': '172.20.12.125'}]
-  # Set to the router gateway on the external network
-  ExternalInterfaceDefaultRoute: 172.20.12.126
+  
+  InternalApiAllocationPools: [{'start': '172.17.0.10', 'end': '172.17.0.200'}]
+  StorageAllocationPools: [{'start': '172.18.0.10', 'end': '172.18.0.200'}]
+  StorageMgmtAllocationPools: [{'start': '172.19.0.10', 'end': '172.19.0.200'}]
+  TenantAllocationPools: [{'start': '172.16.0.10', 'end': '172.16.0.200'}]
+  # Leave room if the external network is also used for floating IPs
+  ExternalAllocationPools: [{'start': '192.168.20.10', 'end': '192.168.20.50'}]
+  # Gateway router for the external network
+  ExternalInterfaceDefaultRoute: 192.168.20.254
+  
   # Gateway router for the provisioning network (or Undercloud IP)
-  ControlPlaneDefaultRoute: 192.0.2.254
-  # Generally the IP of the Undercloud
-  EC2MetadataIp: 192.0.2.1
-  InternalApiNetworkVlanID: 10
-  TenantNetworkVlanID: 11
-  ExternalNetworkVlanID: 12
+  ControlPlaneDefaultRoute: 192.168.10.254
+  EC2MetadataIp: 192.168.10.100  # Generally the IP of the Undercloud
+  # Customize the IP subnets to match the local environment
+  
+  # Customize the VLAN IDs to match the local environment
+  InternalApiNetworkVlanID: 200
+  StorageNetworkVlanID: 300
+  StorageMgmtNetworkVlanID: 400
+  TenantNetworkVlanID: 500
+  ExternalNetworkVlanID: 20
+  
   # Define the DNS servers (maximum 2) for the overcloud nodes
-  DnsServers: ["10.35.28.28","8.8.8.8"]
+  DnsServers: ["192.168.122.1","8.8.8.8"]
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
   NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
@@ -71,17 +83,17 @@ parameter_defaults:
   # The OVS logical->physical bridge mappings to use.
   NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
-  NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
+  #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
   # Nova flavor to use.
-  OvercloudControlFlavor: baremetal
-  OvercloudComputeFlavor: baremetal
+  #OvercloudControlFlavor: baremetal
+  #OvercloudComputeFlavor: baremetal
   # Number of nodes to deploy.
-  ControllerCount: 1
-  ComputeCount: 1
+  #ControllerCount: 1
+  #ComputeCount: 1
 
   # Sets overcloud nodes custom names
   # http://docs.openstack.org/developer/tripleo-docs/advanced_deployment/node_placement.html#custom-hostnames
-  ControllerHostnameFormat: 'controller-%index%'
-  ComputeHostnameFormat: 'compute-%index%'
-  CephStorageHostnameFormat: 'ceph-%index%'
-  ObjectStorageHostnameFormat: 'swift-%index%'
+  #ControllerHostnameFormat: 'controller-%index%'
+  #ComputeHostnameFormat: 'compute-%index%'
+  #CephStorageHostnameFormat: 'ceph-%index%'
+  #ObjectStorageHostnameFormat: 'swift-%index%'
