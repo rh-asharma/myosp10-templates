@@ -1,7 +1,8 @@
-description: >  
-  Software Config to drive os-net-config to configure VLANs for the  
-  compute role.  
-  
+heat_template_version: 2015-04-30
+
+description: >
+  Software Config to drive os-net-config to configure VLANs for the
+  compute role. 
   
 parameters:  
   ExternalIpSubnet:  
