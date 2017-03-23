@@ -46,7 +46,7 @@ parameter_defaults:
   StorageNetCidr: 172.18.0.0/24
   StorageMgmtNetCidr: 172.19.0.0/24
   TenantNetCidr: 172.16.0.0/24
-  ExternalNetCidr: 192.16.20.0/24
+  ExternalNetCidr: 192.168.20.0/24
   
   # CIDR subnet mask length for provisioning network
   ControlPlaneSubnetCidr: '24'
