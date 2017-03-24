@@ -75,7 +75,7 @@ parameter_defaults:
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
-  # NeutronExternalNetworkBridge: "''"
+  NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
   # NeutronTunnelTypes: ''
   # The tenant network type for Neutron (vlan or vxlan).
