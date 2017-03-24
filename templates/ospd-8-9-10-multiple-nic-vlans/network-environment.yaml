@@ -75,13 +75,13 @@ parameter_defaults:
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
-  NeutronExternalNetworkBridge: "''"
+  # NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
-  NeutronTunnelTypes: ''
+  # NeutronTunnelTypes: ''
   # The tenant network type for Neutron (vlan or vxlan).
-  NeutronNetworkType: 'vlan'
+  #NeutronNetworkType: 'vlan'
   # The OVS logical->physical bridge mappings to use.
-  NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
+  # NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
   #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
   # Nova flavor to use.
