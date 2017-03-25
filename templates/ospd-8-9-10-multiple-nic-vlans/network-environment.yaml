@@ -43,8 +43,8 @@ resource_registry:
 parameter_defaults:
   # Customize all these values to match the local environment
   InternalApiNetCidr: 172.17.0.0/24
-  StorageNetCidr: 172.18.0.0/24
-  StorageMgmtNetCidr: 172.19.0.0/24
+  #StorageNetCidr: 172.18.0.0/24
+  #StorageMgmtNetCidr: 172.19.0.0/24
   TenantNetCidr: 172.16.0.0/24
   ExternalNetCidr: 192.168.20.0/24
   
@@ -52,8 +52,8 @@ parameter_defaults:
   ControlPlaneSubnetCidr: '24'
   
   InternalApiAllocationPools: [{'start': '172.17.0.10', 'end': '172.17.0.200'}]
-  StorageAllocationPools: [{'start': '172.18.0.10', 'end': '172.18.0.200'}]
-  StorageMgmtAllocationPools: [{'start': '172.19.0.10', 'end': '172.19.0.200'}]
+  #StorageAllocationPools: [{'start': '172.18.0.10', 'end': '172.18.0.200'}]
+  #StorageMgmtAllocationPools: [{'start': '172.19.0.10', 'end': '172.19.0.200'}]
   TenantAllocationPools: [{'start': '172.16.0.10', 'end': '172.16.0.200'}]
   # Leave room if the external network is also used for floating IPs
   ExternalAllocationPools: [{'start': '192.168.20.10', 'end': '192.168.20.50'}]
@@ -67,8 +67,8 @@ parameter_defaults:
   
   # Customize the VLAN IDs to match the local environment
   InternalApiNetworkVlanID: 200
-  StorageNetworkVlanID: 300
-  StorageMgmtNetworkVlanID: 400
+  #StorageNetworkVlanID: 300
+  #StorageMgmtNetworkVlanID: 400
   TenantNetworkVlanID: 500
   ExternalNetworkVlanID: 600
   
@@ -77,13 +77,13 @@ parameter_defaults:
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
   NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
-  # NeutronTunnelTypes: ''
+  NeutronTunnelTypes: ''
   # The tenant network type for Neutron (vlan or vxlan).
-  #NeutronNetworkType: 'vlan'
+  NeutronNetworkType: 'vlan'
   # The OVS logical->physical bridge mappings to use.
-  # NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
+  NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
-  #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
+  NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:10:50'
   # Nova flavor to use.
   #OvercloudControlFlavor: baremetal
   #OvercloudComputeFlavor: baremetal
