@@ -1,0 +1,72 @@
+There are 1 ironic nodes with no profile that will not be used: ab9165dd-a7bd-4ec0-bfeb-b701d0a85d0d
+Configuration has 1 warnings, fix them before proceeding. 
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow. Execution ID: 9aca76a3-ad4d-490c-a36f-39333346515a
+Plan updated
+Deploying templates in the directory /tmp/tripleoclient-ah0orb/tripleo-heat-templates
+Started Mistral Workflow. Execution ID: 2e5f6ab6-13c2-475e-a440-920587d5577b
+Traceback (most recent call last):
+  File "/usr/bin/openstack", line 10, in <module>
+    sys.exit(main())
+  File "/usr/lib/python2.7/site-packages/openstackclient/shell.py", line 209, in main
+    return OpenStackShell().run(argv)
+  File "/usr/lib/python2.7/site-packages/osc_lib/shell.py", line 135, in run
+    ret_val = super(OpenStackShell, self).run(argv)
+  File "/usr/lib/python2.7/site-packages/cliff/app.py", line 267, in run
+    result = self.run_subcommand(remainder)
+  File "/usr/lib/python2.7/site-packages/osc_lib/shell.py", line 180, in run_subcommand
+    ret_value = super(OpenStackShell, self).run_subcommand(argv)
+  File "/usr/lib/python2.7/site-packages/cliff/app.py", line 387, in run_subcommand
+    result = cmd.run(parsed_args)
+  File "/usr/lib/python2.7/site-packages/osc_lib/command/command.py", line 41, in run
+    return super(Command, self).run(parsed_args)
+  File "/usr/lib/python2.7/site-packages/cliff/command.py", line 59, in run
+    return self.take_action(parsed_args) or 0
+  File "/usr/lib/python2.7/site-packages/tripleoclient/v1/overcloud_deploy.py", line 1183, in take_action
+    self._deploy_tripleo_heat_templates_tmpdir(stack, parsed_args)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/v1/overcloud_deploy.py", line 403, in _deploy_tripleo_heat_templates_tmpdir
+    new_tht_root, tht_root)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/v1/overcloud_deploy.py", line 474, in _deploy_tripleo_heat_templates
+    parsed_args.timeout, env, parsed_args.update_plan_only)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/v1/overcloud_deploy.py", line 484, in _try_overcloud_deploy_with_compat_yaml
+    tht_root, env, update_plan_only)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/v1/overcloud_deploy.py", line 262, in _heat_deploy
+    self.app_args.verbose_level, timeout)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/workflows/deployment.py", line 55, in deploy_and_wait
+    deploy(clients, **workflow_input)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/workflows/deployment.py", line 39, in deploy
+    message = ws.wait_for_message(execution.id)
+  File "/usr/lib/python2.7/site-packages/tripleoclient/plugin.py", line 137, in wait_for_message
+    body = self.recv()['body']
+  File "/usr/lib/python2.7/site-packages/tripleoclient/plugin.py", line 125, in recv
+    return json.loads(self._ws.recv())
+  File "/usr/lib/python2.7/site-packages/websocket/_core.py", line 348, in recv
+    opcode, data = self.recv_data()
+  File "/usr/lib/python2.7/site-packages/websocket/_core.py", line 365, in recv_data
+    opcode, frame = self.recv_data_frame(control_frame)
+  File "/usr/lib/python2.7/site-packages/websocket/_core.py", line 378, in recv_data_frame
+    frame = self.recv_frame()
+  File "/usr/lib/python2.7/site-packages/websocket/_core.py", line 410, in recv_frame
+    return self.frame_buffer.recv_frame()
+  File "/usr/lib/python2.7/site-packages/websocket/_abnf.py", line 300, in recv_frame
+    self.recv_header()
+  File "/usr/lib/python2.7/site-packages/websocket/_abnf.py", line 249, in recv_header
+    header = self.recv_strict(2)
+  File "/usr/lib/python2.7/site-packages/websocket/_abnf.py", line 334, in recv_strict
+    bytes = self.recv(min(16384, shortage))
+  File "/usr/lib/python2.7/site-packages/websocket/_core.py", line 476, in _recv
+    return recv(self.sock, bufsize)
+  File "/usr/lib/python2.7/site-packages/websocket/_socket.py", line 77, in recv
+    bytes = sock.recv(bufsize)
+  File "/usr/lib64/python2.7/ssl.py", line 759, in recv
+    return self.read(buflen)
+  File "/usr/lib64/python2.7/ssl.py", line 653, in read
+    v = self._sslobj.read(len or 1024)
+KeyboardInterrupt
+2017-03-24 22:59:46.660 24332 WARNING tripleoclient.utils.assign_and_verify_profiles [ admin admin] There are 1 ironic nodes with no profile that will not be used: ab9165dd-a7bd-4ec0-bfeb-b701d0a85d0d
+2017-03-24 22:59:46.754 24332 ERROR tripleoclient.v1.overcloud_deploy.DeployOvercloud [ admin admin] Configuration has 1 warnings, fix them before proceeding. 
+2017-03-24 23:10:08.965 24332 ERROR openstack [ admin admin] Heat Stack create failed.
+2017-03-24 23:30:16.112 29386 WARNING tripleoclient.utils.assign_and_verify_profiles [ admin admin] There are 1 ironic nodes with no profile that will not be used: ab9165dd-a7bd-4ec0-bfeb-b701d0a85d0d
+2017-03-24 23:30:16.211 29386 ERROR tripleoclient.v1.overcloud_deploy.DeployOvercloud [ admin admin] Configuration has 1 warnings, fix them before proceeding. 
+2017-03-24 23:40:44.358 29386 ERROR openstack [ admin admin] Heat Stack create failed.
