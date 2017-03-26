@@ -1,7 +1,7 @@
 heat_template_version: 2015-04-30
 
 description: >
-  Returns the control plane port (provisioning network) as the ip_address.
+  Returns the control plane port (provisioning network) as the ip_address
 
 parameters:
   ServiceName: # Here for compatibility with from_service.yaml
