@@ -21,7 +21,10 @@ parameter_defaults:
   # so that external networks act like provider bridge networks (they
   # will plug into br-int instead of br-ex)
   NeutronExternalNetworkBridge: "br-ex"
-  ExternalNetCidr: 192.16.20.0/24
+  
+  ExternalNetCidr: 192.168.20.0/24
+
+  ControlPlaneSubnetCidr: '24'
   ExternalAllocationPools: [{'start': '192.168.20.10', 'end': '192.168.20.50'}]
   ExternalInterfaceDefaultRoute: 192.168.20.254
   EC2MetadataIp: 192.168.10.4
