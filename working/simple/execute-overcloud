@@ -1,0 +1,1 @@
+openstack overcloud deploy --templates  -e  /home/stack/myosp10-templates/cyberton-templates/simple/network-environment.yaml -e /home/stack/myosp10-templates/cyberton-templates/simple/network-isolation.yaml --control-scale 1  --compute-scale 1 --control-flavor control --compute-flavor compute --libvirt-type qemu  --neutron-network-type vxlan --neutron-tunnel-types vxlan
