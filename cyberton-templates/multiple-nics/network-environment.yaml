@@ -34,4 +34,4 @@ parameter_defaults:
 
   DnsServers: ["8.8.8.8","8.8.4.4"]
   
-  BondInterfaceOvsOptions: "bond_mode=balance-slb"
+  BondInterfaceOvsOptions: "bond_mode=active-backup"
