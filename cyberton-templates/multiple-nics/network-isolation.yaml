@@ -12,14 +12,14 @@ resource_registry:
   OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
   OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
   # Storage
-  OS::TripleO::Network::Storage: ../network/storage.yaml
-  OS::TripleO::Network::Ports::StorageVipPort: ../network/ports/storage.yaml
-  OS::TripleO::Controller::Ports::StoragePort: ../network/ports/storage.yaml
-  OS::TripleO::Compute::Ports::StoragePort: ../network/ports/storage.yaml
+  #OS::TripleO::Network::Storage: ../network/storage.yaml
+  #OS::TripleO::Network::Ports::StorageVipPort: ../network/ports/storage.yaml
+  #OS::TripleO::Controller::Ports::StoragePort: ../network/ports/storage.yaml
+  #OS::TripleO::Compute::Ports::StoragePort: ../network/ports/storage.yaml
   # StorageMgmt
-  OS::TripleO::Network::StorageMgmt: ../network/storage_mgmt.yaml
-  OS::TripleO::Network::Ports::StorageMgmtVipPort: ../network/ports/storage_mgmt.yaml
-  OS::TripleO::Controller::Ports::StorageMgmtPort: ../network/ports/storage_mgmt.yaml
+  #OS::TripleO::Network::StorageMgmt: ../network/storage_mgmt.yaml
+  #OS::TripleO::Network::Ports::StorageMgmtVipPort: ../network/ports/storage_mgmt.yaml
+  #OS::TripleO::Controller::Ports::StorageMgmtPort: ../network/ports/storage_mgmt.yaml
   # Tenant
   OS::TripleO::Network::Tenant: /usr/share/openstack-tripleo-heat-templates/network/tenant.yaml
   OS::TripleO::Network::Ports::TenantVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
