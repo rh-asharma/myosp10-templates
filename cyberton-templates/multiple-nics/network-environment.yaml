@@ -1,10 +1,10 @@
 
 resource_registry:
-  OS::TripleO::BlockStorage::Net::SoftwareConfig: nic-configs/noop.yaml
+  #OS::TripleO::BlockStorage::Net::SoftwareConfig: nic-configs/noop.yaml
   OS::TripleO::Compute::Net::SoftwareConfig: nic-configs/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
-  OS::TripleO::ObjectStorage::Net::SoftwareConfig: nic-configs/noop.yaml
-  OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/noop.yaml
+  #OS::TripleO::ObjectStorage::Net::SoftwareConfig: nic-configs/noop.yaml
+  #OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/noop.yaml
 
 parameter_defaults:
 
@@ -33,3 +33,5 @@ parameter_defaults:
   ExternalInterfaceDefaultRoute: 192.168.20.254
 
   DnsServers: ["8.8.8.8","8.8.4.4"]
+  
+  BondInterfaceOvsOptions: "bond_mode=balance-slb"
