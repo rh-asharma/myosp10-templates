@@ -10,7 +10,7 @@ resource_registry:
   OS::TripleO::Compute::Net::SoftwareConfig: nic-configs/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
   #OS::TripleO::ObjectStorage::Net::SoftwareConfig: ../network/config/single-nic-vlans/swift-storage.yaml
-  OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
+  #OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
 
 # We use parameter_defaults instead of parameters here because Tuskar munges
 # the names of top level and role level parameters with the role name and a
@@ -21,8 +21,8 @@ parameter_defaults:
   # so that external networks act like provider bridge networks (they
   # will plug into br-int instead of br-ex)
   NeutronExternalNetworkBridge: "br-ex"
-  ExternalNetCidr: 8.1.1.0/24
-  ExternalAllocationPools: [{'start': '8.1.1.111', 'end': '8.1.1.123'}]
-  ExternalInterfaceDefaultRoute: 8.1.1.1
-  EC2MetadataIp: 9.1.1.1
-  ControlPlaneDefaultRoute: 9.1.1.1
+  ExternalNetCidr: 192.16.20.0/24
+  ExternalAllocationPools: [{'start': '192.168.20.10', 'end': '192.168.20.50'}]
+  ExternalInterfaceDefaultRoute: 192.168.20.254
+  EC2MetadataIp: 192.168.10.4
+  ControlPlaneDefaultRoute: 192.168.10.254
