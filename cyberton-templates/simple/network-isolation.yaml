@@ -2,10 +2,10 @@
 # traffic and configure each role to assign ports (related
 # to that role) on these networks.
 resource_registry:
-  OS::TripleO::Network::External: ../network/external.yaml
+  OS::TripleO::Network::External: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
 
   # Port assignments for the VIPs
-  OS::TripleO::Network::Ports::ExternalVipPort: ../network/ports/external.yaml
+  OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
 
   # Port assignments for the controller role
-  OS::TripleO::Controller::Ports::ExternalPort: ../network/ports/external.yaml
+  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
