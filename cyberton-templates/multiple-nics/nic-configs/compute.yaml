@@ -59,18 +59,15 @@ parameters:
     description: Vlan ID for the management network traffic.
     type: number
   ExternalInterfaceDefaultRoute:
-    default: '10.0.0.1'
     description: default route for the external network
     type: string
   ControlPlaneSubnetCidr: # Override this via parameter_defaults
-    default: '24'
     description: The subnet CIDR of the control plane network.
     type: string
   ControlPlaneDefaultRoute: # Override this via parameter_defaults
     description: The default route of the control plane network.
     type: string
   DnsServers: # Override this via parameter_defaults
-    default: []
     description: A list of DNS servers (2 max for some implementations) that will be added to resolv.conf.
     type: comma_delimited_list
   EC2MetadataIp: # Override this via parameter_defaults
@@ -96,26 +93,6 @@ resources:
             - default: true
               next_hop: {get_param: ControlPlaneDefaultRoute}
             type: interface
-            use_dhcp: false
-          - addresses:
-            - ip_netmask: {get_param: InternalApiIpSubnet}
-            name: nic3
-            type: interface
-            use_dhcp: false
-          - addresses:
-            - ip_netmask: {get_param: StorageIpSubnet}
-            name: nic4
-            type: interface
-            use_dhcp: false
-          - addresses:
-            - ip_netmask: {get_param: TenantIpSubnet}
-            dns_servers: {get_param: DnsServers}
-            members:
-            - name: nic6
-              primary: true
-              type: interface
-            name: br-tenant
-            type: ovs_bridge
             use_dhcp: false
       group: os-apply-config
     type: OS::Heat::StructuredConfig
