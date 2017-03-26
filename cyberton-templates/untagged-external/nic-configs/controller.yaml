@@ -99,7 +99,7 @@ resources:
               members:
                 -
                   type: interface
-                  name: nic1
+                  name: nic2
                   # force the MAC address of the bridge to this interface
                   primary: true
                 -
@@ -128,7 +128,7 @@ resources:
                     ip_netmask: {get_param: TenantIpSubnet}
             -
               type: interface
-              name: nic2
+              name: nic1
               addresses:
               -
                 ip_netmask:
