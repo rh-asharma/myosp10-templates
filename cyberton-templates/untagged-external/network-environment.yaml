@@ -8,8 +8,8 @@ resource_registry:
 parameter_defaults:
 
   ControlPlaneSubnetCidr: '24'
-  ControlPlaneDefaultRoute: 192.168.10.254
   EC2MetadataIp: 192.168.10.4
+  ControlPlaneDefaultRoute: 192.168.10.254
 
   InternalApiNetCidr: 172.17.0.0/24
   #StorageNetCidr: 172.18.0.0/24
@@ -17,10 +17,11 @@ parameter_defaults:
   TenantNetCidr: 172.16.0.0/24
   ExternalNetCidr: 192.16.20.0/24
 
-  #InternalApiNetworkVlanID: 20
+  InternalApiNetworkVlanID: 20
   #StorageNetworkVlanID: 30
   #StorageMgmtNetworkVlanID: 40
-  #TenantNetworkVlanID: 50
+  TenantNetworkVlanID: 50
+  
   #ExternalNetworkVlanID: 20
 
   InternalApiAllocationPools: [{'start': '172.17.0.10', 'end': '172.17.0.200'}]
@@ -35,6 +36,7 @@ parameter_defaults:
 
   # Set to empty string to enable multiple external networks or VLANs
   #NeutronExternalNetworkBridge: "''"
+  NeutronExternalNetworkBridge: "br-ex"
 
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
   #NeutronTunnelTypes: 'vxlan'
