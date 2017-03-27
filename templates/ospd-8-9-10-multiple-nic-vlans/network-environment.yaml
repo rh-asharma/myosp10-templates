@@ -81,9 +81,9 @@ parameter_defaults:
   #NeutronExternalNetworkBridge: "''"
   #NeutronExternalNetworkBridge: "br-ex"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
-  NeutronTunnelTypes: ''
+  #NeutronTunnelTypes: ''
   # The tenant network type for Neutron (vlan or vxlan).
-  NeutronNetworkType: 'vlan'
+  #NeutronNetworkType: 'vxlan'
   # The OVS logical->physical bridge mappings to use.
   #NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-provider'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
