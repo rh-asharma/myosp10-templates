@@ -52,18 +52,3 @@ parameter_defaults:
   # The OVS logical->physical bridge mappings to use.
   #NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-provider'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
-  #NeutronNetworkVLANRanges: 'tenant:100:200'
-  #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:10:50'
-  # Nova flavor to use.
-  #OvercloudControlFlavor: baremetal
-  #OvercloudComputeFlavor: baremetal
-  # Number of nodes to deploy.
-  #ControllerCount: 1
-  #ComputeCount: 1
-
-  # Sets overcloud nodes custom names
-  # http://docs.openstack.org/developer/tripleo-docs/advanced_deployment/node_placement.html#custom-hostnames
-  #ControllerHostnameFormat: 'controller-%index%'
-  #ComputeHostnameFormat: 'compute-%index%'
-  #CephStorageHostnameFormat: 'ceph-%index%'
-  #ObjectStorageHostnameFormat: 'swift-%index%'
