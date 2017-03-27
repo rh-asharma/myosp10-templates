@@ -78,16 +78,18 @@ resources:
               use_dhcp: false
               dns_servers: {get_param: DnsServers}
               addresses:
-                -
-                  ip_netmask:
-                    list_join:
-                      - '/'
-                      - - {get_param: ControlPlaneIp}
-                        - {get_param: ControlPlaneSubnetCidr}
+               -
+                 ip_netmask:
+                   list_join:
+                     - '/'
+                     - - {get_param: ControlPlaneIp}
+                       - {get_param: ControlPlaneSubnetCidr}
               routes:
-                -
-                  ip_netmask: 169.254.169.254/32
-                  next_hop: {get_param: EC2MetadataIp}
+               -
+                 ip_netmask: 169.254.169.254/32
+                 next_hop: {get_param: EC2MetadataIp}
+               -
+                 next_hop: {get_param: ControlPlaneDefaultRoute}
               members:
                 -
                   type: interface
@@ -106,11 +108,11 @@ resources:
                   addresses:
                     -
                       ip_netmask: {get_param: TenantIpSubnet}
-            
+
             -
               type: ovs_bridge
               name: br-ex
-              #use_dhcp: false
+              use_dhcp: false
               dns_servers: {get_param: DnsServers}
               addresses:
                 -
@@ -118,11 +120,13 @@ resources:
               routes:
                 -
                   ip_netmask: 0.0.0.0/0
-                  next_hop: {get_param: ExternalInterfaceDefaultRoute}                  
+                  next_hop: {get_param: ExternalInterfaceDefaultRoute}
               members:
                 -
                   type: interface
-                  name: nic2                                
+                  name: nic2
+                  # force the MAC address of the bridge to this interface
+                  #primary: true
 outputs:
   OS::stack_id:
     description: The OsNetConfigImpl resource.
