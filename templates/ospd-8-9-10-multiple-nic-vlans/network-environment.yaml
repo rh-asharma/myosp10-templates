@@ -46,7 +46,7 @@ parameter_defaults:
   #StorageNetCidr: 172.18.0.0/24
   #StorageMgmtNetCidr: 172.19.0.0/24
   TenantNetCidr: 172.16.0.0/24
-  ExternalNetCidr: 192.168.122.0/24
+  ExternalNetCidr: 192.168.20.0/24
   
   # CIDR subnet mask length for provisioning network
   ControlPlaneSubnetCidr: '24'
@@ -56,10 +56,10 @@ parameter_defaults:
   #StorageMgmtAllocationPools: [{'start': '172.19.0.10', 'end': '172.19.0.200'}]
   TenantAllocationPools: [{'start': '172.16.0.10', 'end': '172.16.0.200'}]
   # Leave room if the external network is also used for floating IPs
-  ExternalAllocationPools: [{'start': '192.168.122.100', 'end': '192.168.122.150'}]
+  ExternalAllocationPools: [{'start': '192.168.20.100', 'end': '192.168.20.150'}]
   # Gateway router for the external network
-  #ExternalInterfaceDefaultRoute: 192.168.20.254
-  ExternalInterfaceDefaultRoute: 192.168.122.1
+  ExternalInterfaceDefaultRoute: 192.168.20.254
+
   
   # Gateway router for the provisioning network (or Undercloud IP)
   ControlPlaneDefaultRoute: 192.168.10.254
