@@ -68,11 +68,11 @@ parameter_defaults:
   ControlPlaneDefaultRoute: 192.168.10.254
   
   # Customize the VLAN IDs to match the local environment
-  InternalApiNetworkVlanID: 200
+  InternalApiNetworkVlanID: 50
   #StorageNetworkVlanID: 300
   #StorageMgmtNetworkVlanID: 400
-  TenantNetworkVlanID: 500
-  ExternalNetworkVlanID: 600
+  TenantNetworkVlanID: 60
+  ExternalNetworkVlanID: 70
   
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
