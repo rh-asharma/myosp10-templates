@@ -70,3 +70,6 @@ KeyboardInterrupt
 2017-03-24 23:30:16.112 29386 WARNING tripleoclient.utils.assign_and_verify_profiles [ admin admin] There are 1 ironic nodes with no profile that will not be used: ab9165dd-a7bd-4ec0-bfeb-b701d0a85d0d
 2017-03-24 23:30:16.211 29386 ERROR tripleoclient.v1.overcloud_deploy.DeployOvercloud [ admin admin] Configuration has 1 warnings, fix them before proceeding. 
 2017-03-24 23:40:44.358 29386 ERROR openstack [ admin admin] Heat Stack create failed.
+2017-03-27 08:55:21.895 1612 WARNING tripleoclient.utils.assign_and_verify_profiles [ admin admin] There are 1 ironic nodes with no profile that will not be used: ab9165dd-a7bd-4ec0-bfeb-b701d0a85d0d
+2017-03-27 08:55:21.990 1612 ERROR tripleoclient.v1.overcloud_deploy.DeployOvercloud [ admin admin] Configuration has 1 warnings, fix them before proceeding. 
+2017-03-27 09:06:40.165 1612 ERROR openstack [ admin admin] Heat Stack create failed.
