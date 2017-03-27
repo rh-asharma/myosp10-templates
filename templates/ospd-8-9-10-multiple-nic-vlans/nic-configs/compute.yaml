@@ -71,7 +71,11 @@ resources:
       config:
         os_net_config:
           network_config:
-          
+            -
+              type: interface
+              name: nic1
+              use_dhcp: false
+              defroute: false
             -
               type: ovs_bridge
               name: br-isolated
@@ -93,21 +97,9 @@ resources:
               members:
                 -
                   type: interface
-                  name: nic1
-                  # force the MAC address of the bridge to this interface
-                  primary: true
-                  
-            -
-              type: ovs_bridge
-              name: br-provider
-              dns_servers: {get_param: DnsServers}
-              members:
-                -
-                  type: interface
                   name: nic2
                   # force the MAC address of the bridge to this interface
                   primary: true
-              
                 -
                   type: vlan
                   vlan_id: {get_param: InternalApiNetworkVlanID}
@@ -119,8 +111,7 @@ resources:
                   vlan_id: {get_param: TenantNetworkVlanID}
                   addresses:
                     -
-                      ip_netmask: {get_param: TenantIpSubnet}
-
+                      ip_netmask: {get_param: TenantIpSubnet}                      
 
 outputs:
   OS::stack_id:
