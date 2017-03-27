@@ -110,14 +110,14 @@ resources:
             -
               type: vlan
               vlan_id: {get_param: InternalApiNetworkVlanID}
-              device: {get_input: bridge_name}
+              #device: {get_input: bridge_name}
               addresses:
                 -
                   ip_netmask: {get_param: InternalApiIpSubnet}
             -
               type: vlan
               vlan_id: {get_param: TenantNetworkVlanID}
-              device: {get_input: bridge_name}
+              #device: {get_input: bridge_name}
               addresses:
                 -
                   ip_netmask: {get_param: TenantIpSubnet}
