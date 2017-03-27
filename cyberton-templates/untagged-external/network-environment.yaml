@@ -35,7 +35,8 @@ parameter_defaults:
   DnsServers: ["8.8.8.8","8.8.4.4"]
 
   # Set to empty string to enable multiple external networks or VLANs
-  NeutronExternalNetworkBridge: "''"
+  #NeutronExternalNetworkBridge: "''"
+  NeutronExternalNetworkBridge: "br-ex"
 
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
   #NeutronTunnelTypes: 'vxlan'
