@@ -16,10 +16,10 @@ resource_registry:
 parameter_defaults:
   NtpServer: 192.168.122.1
   
-  #ControllerCount: 3
-  #ComputeCount: 0
-  #CephStorageCount: 0
-  #OsdComputeCount: 3
+  ControllerCount: 1
+  ComputeCount: 1
+  CephStorageCount: 1
+  #OsdComputeCount: 1
 
   ControllerSchedulerHints:
     'capabilities:node': 'controller-%index%'
@@ -27,8 +27,8 @@ parameter_defaults:
     'capabilities:node': 'compute-%index%'
   CephStorageSchedulerHints:
     'capabilities:node': 'ceph-storage-%index%'
-  OsdComputeSchedulerHints:
-    'capabilities:node': 'osd-compute-%index%'
+  #OsdComputeSchedulerHints:
+    #'capabilities:node': 'osd-compute-%index%'
 
   ControllerIPs:
     internal_api:
