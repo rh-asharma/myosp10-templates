@@ -1,6 +1,6 @@
 resource_registry:
-  OS::TripleO::NodeUserData: /home/stack/custom-templates/first-boot-template.yaml
-  OS::TripleO::NodeExtraConfigPost: /home/stack/custom-templates/post-deploy-template.yaml
+  OS::TripleO::NodeUserData: ./first-boot-template.yaml
+  OS::TripleO::NodeExtraConfigPost: ./post-deploy-template.yaml
 
 parameter_defaults:
   ExtraConfig:
