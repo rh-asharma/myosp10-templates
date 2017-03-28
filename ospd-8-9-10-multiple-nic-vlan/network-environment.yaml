@@ -79,13 +79,15 @@ parameter_defaults:
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
   NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
-  NeutronTunnelTypes: ''
+  #NeutronTunnelTypes: ''
+  NeutronTunnelTypes: 'vxlan'
   # The tenant network type for Neutron (vlan or vxlan).
-  NeutronNetworkType: 'vlan'
+  #NeutronNetworkType: 'vlan'
+  NeutronNetworkType: 'vxlan'
   # The OVS logical->physical bridge mappings to use.
-  NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-isolated'
+  NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-tenant'
   # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
-  NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
+  #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
   # Nova flavor to use.
   #OvercloudControlFlavor: baremetal
   #OvercloudComputeFlavor: baremetal
