@@ -4,8 +4,8 @@ resource_registry:
   OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
   OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
   
-  OS::TripleO::Services::CephMon: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-mon.yaml
-  OS::TripleO::Services::CephOSD: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-osd.yaml
+  #OS::TripleO::Services::CephMon: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-mon.yaml
+  #OS::TripleO::Services::CephOSD: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-osd.yaml
 
 
   # Network isolation configuration
@@ -124,10 +124,10 @@ parameter_defaults:
   StorageMgmtNetworkVlanID: 104
   ExternalNetworkVlanID: 105
   
-  ControllerServices:
-    - OS::TripleO::Services::CephMon
-  CephStorageServices:
-    - OS::TripleO::Services::CephOSD
+  #ControllerServices:
+    #- OS::TripleO::Services::CephMon
+  #CephStorageServices:
+    #- OS::TripleO::Services::CephOSD
   
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
