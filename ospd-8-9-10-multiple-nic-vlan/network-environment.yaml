@@ -42,26 +42,40 @@ resource_registry:
 
 parameter_defaults:
   # Customize all these values to match the local environment
-  InternalApiNetCidr: 10.10.10.0/24
-  TenantNetCidr: 10.10.2.0/24
-  ExternalNetCidr: 192.168.20.0/24
+  InternalApiNetCidr: 192.168.101.0/24
+  TenantNetCidr: 192.168.102.0/24
+  #StorageNetCidr: 192.168.103.0/24
+  #StorageMgmtNetCidr: 192.168.104.0/24
+  ExternalNetCidr: 192.168.105.0/24
+  
   # CIDR subnet mask length for provisioning network
   ControlPlaneSubnetCidr: '24'
-  InternalApiAllocationPools: [{'start': '10.10.10.10', 'end': '10.10.10.200'}]
-  TenantAllocationPools: [{'start': '10.10.2.100', 'end': '10.10.2.200'}]
+  
+  InternalApiAllocationPools: [{'start': '192.168.101.100', 'end': '192.168.101.200'}]
+  TenantAllocationPools: [{'start': '192.168.102.100', 'end': '192.168.102.200'}]
+  #StorageAllocationPools: [{'start': '192.168.103.100', 'end': '192.168.103.200'}]
+  #StorageMgmtAllocationPools: [{'start': '192.168.104.100', 'end': '192.168.104.200'}]
   # Use an External allocation pool which will leave room for floating IPs
-  ExternalAllocationPools: [{'start': '192.168.20.100', 'end': '192.168.20.150'}]
+  ExternalAllocationPools: [{'start': '192.168.105.100', 'end': '192.168.105.200'}]
+  
   # Set to the router gateway on the external network
-  ExternalInterfaceDefaultRoute: 192.168.20.254
+  ExternalInterfaceDefaultRoute: 192.168.105.254
+  
   # Gateway router for the provisioning network (or Undercloud IP)
   ControlPlaneDefaultRoute: 192.168.10.254
+  
   # Generally the IP of the Undercloud
   EC2MetadataIp: 192.168.10.4
-  InternalApiNetworkVlanID: 4095
-  TenantNetworkVlanID: 11
-  ExternalNetworkVlanID: 12
+  
+  InternalApiNetworkVlanID: 101
+  TenantNetworkVlanID: 102
+  #StorageNetworkVlanID: 103
+  #StorageMgmtNetworkVlanID: 104
+  ExternalNetworkVlanID: 105
+  
   # Define the DNS servers (maximum 2) for the overcloud nodes
   DnsServers: ["192.168.122.1","8.8.8.8"]
+  
   # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
   NeutronExternalNetworkBridge: "''"
   # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
