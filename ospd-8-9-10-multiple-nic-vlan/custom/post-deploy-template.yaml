@@ -20,5 +20,5 @@ resources:
       servers: {get_param: servers}
       config: {get_resource: ExtraConfig}
       input_values:
-        OSD_NUMA_INTERFACE: 'em2'
+        OSD_NUMA_INTERFACE: 'eth1'
       actions: ['CREATE']
