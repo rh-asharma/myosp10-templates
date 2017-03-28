@@ -61,6 +61,37 @@ resource_registry:
   #OS::TripleO::BlockStorage::Ports::ManagementPort: ../network/ports/management.yaml
   
 parameter_defaults:
+
+  ServiceNetMap:
+    NeutronTenantNetwork: tenant
+    CeilometerApiNetwork: internal_api
+    MongoDbNetwork: internal_api
+    CinderApiNetwork: internal_api
+    CinderIscsiNetwork: storage
+    GlanceApiNetwork: storage
+    GlanceRegistryNetwork: internal_api
+    KeystoneAdminApiNetwork: ctlplane # Admin connection for Undercloud
+    KeystonePublicApiNetwork: internal_api
+    NeutronApiNetwork: internal_api
+    HeatApiNetwork: internal_api
+    NovaApiNetwork: internal_api
+    NovaMetadataNetwork: internal_api
+    NovaVncProxyNetwork: internal_api
+    HorizonNetwork: external
+    MemcachedNetwork: internal_api
+    RabbitMqNetwork: internal_api
+    RedisNetwork: internal_api
+    MysqlNetwork: internal_api
+    CephPublicNetwork: storage
+    SwiftMgmtNetwork: storage
+    SwiftProxyNetwork: storage
+    CephClusterNetwork: storage
+    ControllerHostnameResolveNetwork: internal_api
+    ComputeHostnameResolveNetwork: internal_api
+    BlockStorageHostnameResolveNetwork: internal_api
+    ObjectStorageHostnameResolveNetwork: internal_api
+    CephStorageHostnameResolveNetwork: storage
+    
   # Customize all these values to match the local environment
   InternalApiNetCidr: 192.168.101.0/24
   TenantNetCidr: 192.168.102.0/24
