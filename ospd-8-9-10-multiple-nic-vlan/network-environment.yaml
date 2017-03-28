@@ -25,13 +25,13 @@ resource_registry:
   OS::TripleO::Network::Ports::StorageVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
   OS::TripleO::Network::Ports::StorageMgmtVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
 
-  # Port assignments for the controller role
-  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
-  OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
-  OS::TripleO::Controller::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
-  OS::TripleO::Controller::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
-  OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
-  OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+  # Port assignments for the controller role - refer layout.yaml in custom directory
+  #OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  #OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  #OS::TripleO::Controller::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
+  #OS::TripleO::Controller::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  #OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  #OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
 
   # Port assignments for the compute role
   OS::TripleO::Compute::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
@@ -61,36 +61,6 @@ resource_registry:
   #OS::TripleO::BlockStorage::Ports::ManagementPort: ../network/ports/management.yaml
   
 parameter_defaults:
-
-  ServiceNetMap:
-    NeutronTenantNetwork: tenant
-    CeilometerApiNetwork: internal_api
-    MongoDbNetwork: internal_api
-    CinderApiNetwork: internal_api
-    CinderIscsiNetwork: storage
-    GlanceApiNetwork: storage
-    GlanceRegistryNetwork: internal_api
-    KeystoneAdminApiNetwork: ctlplane # Admin connection for Undercloud
-    KeystonePublicApiNetwork: internal_api
-    NeutronApiNetwork: internal_api
-    HeatApiNetwork: internal_api
-    NovaApiNetwork: internal_api
-    NovaMetadataNetwork: internal_api
-    NovaVncProxyNetwork: internal_api
-    HorizonNetwork: external
-    MemcachedNetwork: internal_api
-    RabbitMqNetwork: internal_api
-    RedisNetwork: internal_api
-    MysqlNetwork: internal_api
-    CephPublicNetwork: storage
-    SwiftMgmtNetwork: storage
-    SwiftProxyNetwork: storage
-    CephClusterNetwork: storage
-    ControllerHostnameResolveNetwork: internal_api
-    ComputeHostnameResolveNetwork: internal_api
-    BlockStorageHostnameResolveNetwork: internal_api
-    ObjectStorageHostnameResolveNetwork: internal_api
-    CephStorageHostnameResolveNetwork: storage
     
   # Customize all these values to match the local environment
   InternalApiNetCidr: 192.168.101.0/24
@@ -153,7 +123,7 @@ parameter_defaults:
 
   # Sets overcloud nodes custom names
   # http://docs.openstack.org/developer/tripleo-docs/advanced_deployment/node_placement.html#custom-hostnames
-  ControllerHostnameFormat: 'controller-%index%'
-  ComputeHostnameFormat: 'compute-%index%'
-  CephStorageHostnameFormat: 'ceph-%index%'
-  ObjectStorageHostnameFormat: 'swift-%index%'
+  #ControllerHostnameFormat: 'controller-%index%'
+  #ComputeHostnameFormat: 'compute-%index%'
+  #CephStorageHostnameFormat: 'ceph-%index%'
+  #ObjectStorageHostnameFormat: 'swift-%index%'
