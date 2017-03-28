@@ -2,6 +2,8 @@ resource_registry:
   # Specify the relative/absolute path to the config files you want to use for override the default.
   OS::TripleO::Compute::Net::SoftwareConfig: nic-configs/compute.yaml
   OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
+  OS::TripleO::BlockStorage::Net::SoftwareConfig: nic-configs/cinder-storage.yaml
+  OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
 
   # Network isolation configuration
   # Service section
