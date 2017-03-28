@@ -19,7 +19,7 @@ parameter_defaults:
   ControllerCount: 1
   ComputeCount: 1
   CephStorageCount: 1
-  #OsdComputeCount: 1
+  OsdComputeCount: 1
 
   ControllerSchedulerHints:
     'capabilities:node': 'controller-%index%'
@@ -27,8 +27,8 @@ parameter_defaults:
     'capabilities:node': 'compute-%index%'
   CephStorageSchedulerHints:
     'capabilities:node': 'ceph-storage-%index%'
-  #OsdComputeSchedulerHints:
-    #'capabilities:node': 'osd-compute-%index%'
+  OsdComputeSchedulerHints:
+    'capabilities:node': 'osd-compute-%index%'
 
   ControllerIPs:
     internal_api:
