@@ -77,7 +77,7 @@ jq . << EOF > ~/instackenv.json
       "pm_user": "stack"
     },
     {
-      "name": "overcloud-node6”,
+      "name": "overcloud-node6",
       "pm_addr": "192.168.122.1",
       "pm_password": "$(cat ~/.ssh/id_rsa)",
       "pm_type": "pxe_ssh",
@@ -91,7 +91,7 @@ jq . << EOF > ~/instackenv.json
       "pm_user": "stack"
     },
     {
-      "name": "overcloud-node7”,
+      "name": "overcloud-node7",
       "pm_addr": "192.168.122.1",
       "pm_password": "$(cat ~/.ssh/id_rsa)",
       "pm_type": "pxe_ssh",
@@ -105,7 +105,7 @@ jq . << EOF > ~/instackenv.json
       "pm_user": "stack"
     },
     {
-      "name": "overcloud-node8”,
+      "name": "overcloud-node8",
       "pm_addr": "192.168.122.1",
       "pm_password": "$(cat ~/.ssh/id_rsa)",
       "pm_type": "pxe_ssh",
@@ -119,7 +119,7 @@ jq . << EOF > ~/instackenv.json
       "pm_user": "stack"
     },
     {
-      "name": "overcloud-node9”,
+      "name": "overcloud-node9",
       "pm_addr": "192.168.122.1",
       "pm_password": "$(cat ~/.ssh/id_rsa)",
       "pm_type": "pxe_ssh",
@@ -133,7 +133,7 @@ jq . << EOF > ~/instackenv.json
       "pm_user": "stack"
     },
     {
-      "name": "overcloud-node10”,
+      "name": "overcloud-node10",
       "pm_addr": "192.168.122.1",
       "pm_password": "$(cat ~/.ssh/id_rsa)",
       "pm_type": "pxe_ssh",
