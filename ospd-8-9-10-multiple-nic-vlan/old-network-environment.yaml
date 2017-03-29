@@ -86,7 +86,7 @@ parameter_defaults:
   ControlPlaneDefaultRoute: 192.168.10.254
   
   # Generally the IP of the Undercloud
-  EC2MetadataIp: 192.168.10.4
+  EC2MetadataIp: 192.168.10.2
   
   InternalApiNetworkVlanID: 101
   TenantNetworkVlanID: 102
