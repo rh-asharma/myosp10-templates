@@ -146,5 +146,6 @@ jq . << EOF > ~/instackenv.json
       "arch": "x86_64",
       "pm_user": "stack"
     },
+   ]
 }
 EOF
