@@ -83,7 +83,7 @@ parameter_defaults:
   ExternalInterfaceDefaultRoute: 192.168.105.254
   
   # Gateway router for the provisioning network (or Undercloud IP)
-  ControlPlaneDefaultRoute: 192.168.10.1
+  ControlPlaneDefaultRoute: 192.168.10.254
   
   # Generally the IP of the Undercloud
   EC2MetadataIp: 192.168.10.2
