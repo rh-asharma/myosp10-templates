@@ -14,7 +14,7 @@ jq . << EOF > ~/instackenv.json
       "mac": [
         "$(sed -n 1p /tmp/nodes.txt)"
       ],
-      "cpu": "8",
+      "cpu": "16",
       "memory": "16384",
       "disk": "50",
       "arch": "x86_64",
@@ -28,7 +28,7 @@ jq . << EOF > ~/instackenv.json
       "mac": [
         "$(sed -n 2p /tmp/nodes.txt)"
       ],
-      "cpu": "8",
+      "cpu": "16",
       "memory": "16384",
       "disk": "50",
       "arch": "x86_64",
@@ -42,7 +42,7 @@ jq . << EOF > ~/instackenv.json
       "mac": [
         "$(sed -n 3p /tmp/nodes.txt)"
       ],
-      "cpu": "8",
+      "cpu": "16",
       "memory": "16384",
       "disk": "50",
       "arch": "x86_64",
@@ -56,7 +56,7 @@ jq . << EOF > ~/instackenv.json
       "mac": [
         "$(sed -n 4p /tmp/nodes.txt)"
       ],
-      "cpu": "8",
+      "cpu": "16",
       "memory": "16384",
       "disk": "50",
       "arch": "x86_64",
@@ -70,7 +70,7 @@ jq . << EOF > ~/instackenv.json
       "mac": [
         "$(sed -n 5p /tmp/nodes.txt)"
       ],
-      "cpu": "8",
+      "cpu": "16",
       "memory": "16384",
       "disk": "50",
       "arch": "x86_64",
