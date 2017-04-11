@@ -1,0 +1,20 @@
+heat_template_version: 2014-10-16
+
+description: >
+  Amit Custom Script
+
+resources:
+  userdata:
+    type: OS::Heat::MultipartMime
+    properties:
+      parts:
+      - config: {get_resource: amit_custom}
+
+  amit_custom:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      config: {get_file: amit-custom.sh}
+
+outputs:
+  OS::stack_id:
+    value: {get_resource: userdata}
