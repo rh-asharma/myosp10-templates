@@ -64,7 +64,8 @@ resource_registry:
   OS::TripleO::BlockStorage::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
   OS::TripleO::BlockStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   #OS::TripleO::BlockStorage::Ports::ManagementPort: ../network/ports/management.yaml
-  
+  OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-custom-script.yaml
+    
 parameter_defaults:
   
   # Customize all these values to match the local environment
