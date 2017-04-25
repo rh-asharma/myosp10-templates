@@ -4,7 +4,7 @@ resource_registry:
   OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
   OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
 
-  OS::TripleO::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::NodeUserData: amit-custom/amit-custom-script.yaml
   
   #OS::TripleO::Services::CephMon: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-mon.yaml
   #OS::TripleO::Services::CephOSD: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-osd.yaml
@@ -34,7 +34,7 @@ resource_registry:
   OS::TripleO::Controller::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
   OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
-  OS::TripleO::Controller::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::Controller::NodeUserData: amit-custom/amit-custom-script.yaml
   OS::TripleO::Controller::NodeUserData: amit-custom/amit-swap.yaml
   
   # Port assignments for the compute role
@@ -44,7 +44,7 @@ resource_registry:
   OS::TripleO::Compute::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   OS::TripleO::Compute::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
   OS::TripleO::Compute::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
-  OS::TripleO::Compute::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::Compute::NodeUserData: amit-custom/amit-custom-script.yaml
   OS::TripleO::Compute::NodeUserData: amit-custom/amit-swap.yaml
   
   # Port assignments for service virtual IPs for the controller role
@@ -57,7 +57,7 @@ resource_registry:
   OS::TripleO::CephStorage::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
   OS::TripleO::CephStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   #OS::TripleO::CephStorage::Ports::ManagementPort: ../network/ports/management.yaml
-  OS::TripleO::CephStorage::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::CephStorage::NodeUserData: amit-custom/amit-custom-script.yaml
   OS::TripleO::CephStorage::NodeUserData: amit-custom/amit-swap.yaml
   
   # Port assignments for the block storage role
@@ -67,7 +67,7 @@ resource_registry:
   OS::TripleO::BlockStorage::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
   OS::TripleO::BlockStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   #OS::TripleO::BlockStorage::Ports::ManagementPort: ../network/ports/management.yaml
-  OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-custom-script.yaml
   OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-swap.yaml
     
 parameter_defaults:
