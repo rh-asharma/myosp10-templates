@@ -14,13 +14,13 @@ resources:
   firstboot_config:
     type: OS::Heat::SoftwareConfig
     properties:
-      group: script
+      #group: script
       config: {get_file: firstboot-setup.sh}
       
   amit_custom:
     type: OS::Heat::SoftwareConfig
     properties:
-      group: script
+      #group: script
       config: {get_file: amit-custom.sh}
 
 outputs:
