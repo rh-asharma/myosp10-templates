@@ -9,19 +9,12 @@ resources:
     properties:
       parts:
       - config: {get_resource: firstboot_config}
-      - config: {get_resource: amit_custom}
 
   firstboot_config:
     type: OS::Heat::SoftwareConfig
     properties:
       #group: script
       config: {get_file: /home/stack/myosp10-templates/ospd-8-9-10-multiple-nic-vlan/amit-custom/firstboot-setup.sh}
-      
-  amit_custom:
-    type: OS::Heat::SoftwareConfig
-    properties:
-      #group: script
-      config: {get_file: /home/stack/myosp10-templates/ospd-8-9-10-multiple-nic-vlan/amit-custom/amit-custom.sh}
 
 outputs:
   OS::stack_id:
