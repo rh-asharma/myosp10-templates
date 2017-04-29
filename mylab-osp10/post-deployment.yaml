@@ -1,0 +1,40 @@
+heat_template_version: 2014-10-16
+
+description: >
+  Post-deployment Fixes
+
+parameters:
+  servers:
+    type: json
+
+resources:
+
+  ExtraConfig:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: script
+      config: |
+        #!/usr/bin/env bash
+        # Permit root login over SSH
+        sed -i 's/.*ssh-rsa/ssh-rsa/' /root/.ssh/authorized_keys
+        sed -i 's/PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+        sed -i 's/ChallengeResponseAuthentication.*/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config
+
+        systemctl restart sshd
+        echo redhat | sudo passwd root --stdin
+
+        if [[ $(hostname -s) =~ .*controller* ]]
+        then
+          dd if=/dev/zero of=/cinder-volumes.img bs=1G count=10
+          echo "losetup /dev/loop0 /cinder-volumes.img" >> /etc/rc.d/rc.local
+          chmod +x /etc/rc.d/rc.local
+          systemctl enable rc-local.service
+        fi
+
+  ExtraDeployments:
+    type: OS::Heat::SoftwareDeployments
+    properties:
+      name: ExtraDeployments
+      servers:  {get_param: servers}
+      config: {get_resource: ExtraConfig}
+      actions: ['CREATE'] # Only do this on CREATE
