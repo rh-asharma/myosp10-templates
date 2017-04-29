@@ -50,8 +50,8 @@ parameter_defaults:
     ObjectStorageHostnameResolveNetwork: internal_api
     CephStorageHostnameResolveNetwork: internal_api
     
-  ExternalNetworkVip: 192.168.122.101
-  PublicVirtualFixedIPs: [{'ip_address':'192.168.122.100'}]
+  ExternalNetworkVip: 192.168.105.101
+  PublicVirtualFixedIPs: [{'ip_address':'192.168.105.100'}]
   
   HostnameMap:
     overcloud-controller-0: amit-controller01
@@ -79,7 +79,7 @@ parameter_defaults:
   StorageAllocationPools: [{'start': '192.168.103.100', 'end': '192.168.103.200'}]
   StorageMgmtAllocationPools: [{'start': '192.168.104.100', 'end': '192.168.104.200'}]
   # Use an External allocation pool which will leave room for floating IPs
-  ExternalAllocationPools: [{'start': '192.168.105.100', 'end': '192.168.105.200'}]
+  ExternalAllocationPools: [{'start': '192.168.105.102', 'end': '192.168.105.200'}]
 
   # Set to the router gateway on the external network
   ExternalInterfaceDefaultRoute: 192.168.105.254
