@@ -89,9 +89,10 @@ resources:
         os_net_config:
           network_config:
             -
-              type: interface
-              name: nic1
+              type: ovs_bridge
+              name: br-isolated
               use_dhcp: false
+              dns_servers: {get_param: DnsServers}
               addresses:
                 -
                   ip_netmask:
@@ -103,29 +104,47 @@ resources:
                 -
                   ip_netmask: 169.254.169.254/32
                   next_hop: {get_param: EC2MetadataIp}
+              members:
+                -
+                  type: interface
+                  name: nic1
+                  # force the MAC address of the bridge to this interface
+                  primary: true
+                  
+            -
+              type: ovs_bridge
+              name: br-internalapi
+              use_dhcp: false
+              dns_servers: {get_param: DnsServers}
+              addresses:
+                -
+                  ip_netmask: {get_param: InternalApiIpSubnet}
+              routes:
+              members:
+                -
+                  type: interface
+                  name: nic2
+                  # force the MAC address of the bridge to this interface
+                  #primary: true
+                  
             -
               type: ovs_bridge
               name: br-ex
+              use_dhcp: false
               dns_servers: {get_param: DnsServers}
               addresses:
                 -
                   ip_netmask: {get_param: ExternalIpSubnet}
               routes:
                 -
-                  default: true
+                  ip_netmask: 0.0.0.0/0
                   next_hop: {get_param: ExternalInterfaceDefaultRoute}
               members:
                 -
                   type: interface
-                  name: nic2
+                  name: nic6
                   # force the MAC address of the bridge to this interface
-                  primary: true
-                -
-                  type: vlan
-                  vlan_id: {get_param: InternalApiNetworkVlanID}
-                  addresses:
-                    -
-                      ip_netmask: {get_param: InternalApiIpSubnet}
+                  #primary: true
 
 outputs:
   OS::stack_id:
