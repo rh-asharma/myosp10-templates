@@ -76,6 +76,12 @@ parameter_defaults:
   OvercloudNetworkerFlavor: networker
   NetworkerCount: 1
   #NeutronExternalNetworkBridge: "br-ex"
+  
+  #NeutronTunnelTypes: ''
+  NeutronTunnelTypes: 'vxlan'
+  #NeutronNetworkType: 'vlan'
+  NeutronNetworkType: 'vxlan'
+  
 
   InternalApiNetCidr: 192.168.101.0/24
   TenantNetCidr: 192.168.102.0/24
