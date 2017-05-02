@@ -3,17 +3,24 @@ resource_registry:
   OS::TripleO::Controller::Net::SoftwareConfig: /home/stack/myosp10-templates/mylab-osp10/nic-configs/controller.yaml
   OS::TripleO::Networker::Net::SoftwareConfig: /home/stack/myosp10-templates/mylab-osp10/nic-configs/networker.yaml
   
+  #OS::TripleO::NodeExtraConfigPost: /home/stack/templates/post-deployment.yaml
+
   #OS::TripleO::NodeExtraConfigPost: /home/stack/myosp10-templates/mylab-osp10/post-deployment.yaml
 
   # Network isolation configuration
   # Service section
   # If some service should be disable, use the following example
   # OS::TripleO::Network::Management: OS::Heat::None
+  
   OS::TripleO::Network::External: /usr/share/openstack-tripleo-heat-templates/network/external.yaml
   OS::TripleO::Network::InternalApi: /usr/share/openstack-tripleo-heat-templates/network/internal_api.yaml
   OS::TripleO::Network::Tenant: /usr/share/openstack-tripleo-heat-templates/network/tenant.yaml
   OS::TripleO::Network::StorageMgmt: /usr/share/openstack-tripleo-heat-templates/network/storage_mgmt.yaml
   OS::TripleO::Network::Storage: /usr/share/openstack-tripleo-heat-templates/network/storage.yaml
+  
+  OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Network::Ports::InternalApiVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+
   
   # Port assignments for the VIPs
   OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
@@ -30,7 +37,7 @@ resource_registry:
   OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
   OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
 
-  # Port assignments for the networker role
+  # Port assignments for the networker role 
   OS::TripleO::Networker::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
   OS::TripleO::Networker::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
   OS::TripleO::Networker::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
@@ -64,7 +71,44 @@ resource_registry:
   OS::TripleO::BlockStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
   
 parameter_defaults:
-  CloudDomain: amit.local
+  CloudDomain: redhat.local
+
+  OvercloudNetworkerFlavor: networker
+  NetworkerCount: 1
+  #NeutronExternalNetworkBridge: "br-ex"
+
+  InternalApiNetCidr: 192.168.101.0/24
+  TenantNetCidr: 192.168.102.0/24
+  StorageNetCidr: 192.168.103.0/24
+  StorageMgmtNetCidr: 192.168.104.0/24
+  ExternalNetCidr: 192.168.105.0/24
+  
+  InternalApiAllocationPools: [{'start': '192.168.101.100', 'end': '192.168.101.200'}]
+  TenantAllocationPools: [{'start': '192.168.102.100', 'end': '192.168.102.200'}]
+  StorageAllocationPools: [{'start': '192.168.103.100', 'end': '192.168.103.200'}]
+  StorageMgmtAllocationPools: [{'start': '192.168.104.100', 'end': '192.168.104.200'}]
+  # Use an External allocation pool which will leave room for floating IPs
+  ExternalAllocationPools: [{'start': '192.168.105.102', 'end': '192.168.105.200'}]
+
+  # Set to the router gateway on the external network
+  ExternalInterfaceDefaultRoute: 192.168.105.254
+
+  InternalApiNetworkVlanID: 101
+  TenantNetworkVlanID: 102
+  StorageNetworkVlanID: 103
+  StorageMgmtNetworkVlanID: 104
+  ExternalNetworkVlanID: 105
+  
+ # Gateway router for the provisioning network (or Undercloud IP)
+  EC2MetadataIp: 192.168.10.2
+  
+  ControlPlaneDefaultRoute: 192.168.10.254
+  ControlPlaneSubnetCidr: "24"
+  
+  DnsServers: ["192.168.122.1","8.8.8.8"]
+  ExternalNetworkVip: 192.168.105.101
+  #PublicVirtualFixedIPs: [{'ip_address':'192.168.105.100'}]
+
   ServiceNetMap:
     NeutronTenantNetwork: internal_api
     CeilometerApiNetwork: internal_api
@@ -97,10 +141,7 @@ parameter_defaults:
     BlockStorageHostnameResolveNetwork: internal_api
     ObjectStorageHostnameResolveNetwork: internal_api
     CephStorageHostnameResolveNetwork: internal_api
-    
-  ExternalNetworkVip: 192.168.105.101
-  PublicVirtualFixedIPs: [{'ip_address':'192.168.105.100'}]
-  
+   
   HostnameMap:
     overcloud-controller-0: amit-controller01
     overcloud-controller-1: amit-controller02
@@ -111,36 +152,3 @@ parameter_defaults:
     overcloud-cephstorage-1: amit-ceph02
     overcloud-cephstorage-2: amit-ceph03
     overcloud-networker-0: amit-networker
-    
-  OvercloudNetworkerFlavor: networker
-  NetworkerCount: 1
-  NeutronExternalNetworkBridge: "br-ex"
-
-  InternalApiNetCidr: 192.168.101.0/24
-  TenantNetCidr: 192.168.102.0/24
-  StorageNetCidr: 192.168.103.0/24
-  StorageMgmtNetCidr: 192.168.104.0/24
-  ExternalNetCidr: 192.168.105.0/24
-  
-  InternalApiAllocationPools: [{'start': '192.168.101.100', 'end': '192.168.101.200'}]
-  TenantAllocationPools: [{'start': '192.168.102.100', 'end': '192.168.102.200'}]
-  StorageAllocationPools: [{'start': '192.168.103.100', 'end': '192.168.103.200'}]
-  StorageMgmtAllocationPools: [{'start': '192.168.104.100', 'end': '192.168.104.200'}]
-  # Use an External allocation pool which will leave room for floating IPs
-  ExternalAllocationPools: [{'start': '192.168.105.102', 'end': '192.168.105.200'}]
-
-  # Set to the router gateway on the external network
-  ExternalInterfaceDefaultRoute: 192.168.105.254
-
-  InternalApiNetworkVlanID: 101
-  TenantNetworkVlanID: 102
-  StorageNetworkVlanID: 103
-  StorageMgmtNetworkVlanID: 104
-  ExternalNetworkVlanID: 105
-  
- # Gateway router for the provisioning network (or Undercloud IP)
-  ControlPlaneDefaultRoute: 192.168.10.254
-  ControlPlaneSubnetCidr: "24"
-  
-  EC2MetadataIp: 192.168.10.2
-  DnsServers: ["192.168.122.1","8.8.8.8"]
