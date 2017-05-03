@@ -1,7 +1,8 @@
 resource_registry:
-  OS::TripleO::Compute::Net::SoftwareConfig: /home/stack/templates/nic-configs/compute.yaml
-  OS::TripleO::Controller::Net::SoftwareConfig: /home/stack/templates/nic-configs/controller.yaml
-  OS::TripleO::Networker::Net::SoftwareConfig: /home/stack/templates/nic-configs/networker.yaml  
+  OS::TripleO::Compute::Net::SoftwareConfig: nic-configs/compute-orig.yaml
+  OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller-orig.yaml
+  OS::TripleO::Networker::Net::SoftwareConfig: nic-configs/networker-orig.yaml
+  
   OS::TripleO::Network::External: /usr/share/openstack-tripleo-heat-templates/network/external.yaml
   OS::TripleO::Network::InternalApi: /usr/share/openstack-tripleo-heat-templates/network/internal_api.yaml
   OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
@@ -11,7 +12,8 @@ resource_registry:
   OS::TripleO::Networker::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
   OS::TripleO::Networker::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
   OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
-  OS::TripleO::NodeExtraConfigPost: /home/stack/templates/post-deployment.yaml
+  
+  #OS::TripleO::NodeExtraConfigPost: /home/stack/templates/post-deployment.yaml
 
 parameter_defaults:
   CloudDomain: redhat.local
@@ -47,28 +49,35 @@ parameter_defaults:
     BlockStorageHostnameResolveNetwork: internal_api
     ObjectStorageHostnameResolveNetwork: internal_api
     CephStorageHostnameResolveNetwork: internal_api
-  ExternalNetworkVip: 192.168.122.101
-  PublicVirtualFixedIPs: [{'ip_address':'192.168.122.100'}]
+    
+  ExternalNetworkVip: 192.168.105.101
+  PublicVirtualFixedIPs: [{'ip_address':'192.168.105.100'}]
+  
   HostnameMap:
-    overcloud-controller-0: summit-controller01
-    overcloud-controller-1: summit-controller02
-    overcloud-controller-2: summit-controller03
-    overcloud-compute-0: summit-compute01
-    overcloud-compute-1: summit-compute02
-    overcloud-cephstorage-0: summit-ceph01
-    overcloud-cephstorage-1: summit-ceph02
-    overcloud-cephstorage-2: summit-ceph03
-    overcloud-networker-0: summit-networker
+    overcloud-controller-0: amit-controller01
+    overcloud-controller-1: amit-controller02
+    overcloud-controller-2: amit-controller03
+    overcloud-compute-0: amit-compute01
+    overcloud-compute-1: amit-compute02
+    overcloud-cephstorage-0: amit-ceph01
+    overcloud-cephstorage-1: amit-ceph02
+    overcloud-cephstorage-2: amit-ceph03
+    overcloud-networker-0: amit-networker
+    
   OvercloudNetworkerFlavor: networker
   NetworkerCount: 1
   NeutronExternalNetworkBridge: "br-ex"
-  InternalApiNetCidr: 172.17.1.0/24
-  InternalApiAllocationPools: [{'start': '172.17.1.10', 'end': '172.17.1.200'}]
+  
+  InternalApiNetCidr: 192.168.101.0/24
+  InternalApiAllocationPools: [{'start': '192.168.101.10', 'end': '192.168.101.200'}]
   InternalApiNetworkVlanID: 101
-  ExternalNetCidr: 192.168.122.0/24
-  ExternalAllocationPools: [{'start': '192.168.122.102', 'end': '192.168.122.129'}]
-  ExternalInterfaceDefaultRoute: 192.168.122.1
+  
+  ExternalNetCidr: 192.168.105.0/24
+  ExternalAllocationPools: [{'start': '192.168.105.102', 'end': '192.168.105.200'}]
+  ExternalInterfaceDefaultRoute: 192.168.105.254
+  
   ControlPlaneSubnetCidr: "24"
-  ControlPlaneDefaultRoute: 172.16.0.1
-  EC2MetadataIp: 172.16.0.1
+  ControlPlaneDefaultRoute: 192.168.10.254
+  EC2MetadataIp: 192.168.10.1
+  
   DnsServers: ['192.168.122.1', '8.8.8.8']
