@@ -1,0 +1,74 @@
+resource_registry:
+  OS::TripleO::Compute::Net::SoftwareConfig: /home/stack/templates/nic-configs/compute.yaml
+  OS::TripleO::Controller::Net::SoftwareConfig: /home/stack/templates/nic-configs/controller.yaml
+  OS::TripleO::Networker::Net::SoftwareConfig: /home/stack/templates/nic-configs/networker.yaml  
+  OS::TripleO::Network::External: /usr/share/openstack-tripleo-heat-templates/network/external.yaml
+  OS::TripleO::Network::InternalApi: /usr/share/openstack-tripleo-heat-templates/network/internal_api.yaml
+  OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Network::Ports::InternalApiVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Networker::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Networker::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::NodeExtraConfigPost: /home/stack/templates/post-deployment.yaml
+
+parameter_defaults:
+  CloudDomain: redhat.local
+  ServiceNetMap:
+    NeutronTenantNetwork: internal_api
+    CeilometerApiNetwork: internal_api
+    AodhApiNetwork: internal_api
+    GnocchiApiNetwork: internal_api
+    MongoDbNetwork: internal_api
+    CinderApiNetwork: internal_api
+    CinderIscsiNetwork: internal_api
+    GlanceApiNetwork: internal_api
+    GlanceRegistryNetwork: internal_api
+    KeystoneAdminApiNetwork: external
+    KeystonePublicApiNetwork: internal_api
+    NeutronApiNetwork: internal_api
+    HeatApiNetwork: internal_api
+    NovaApiNetwork: internal_api
+    NovaMetadataNetwork: internal_api
+    NovaVncProxyNetwork: internal_api
+    SwiftMgmtNetwork: internal_api
+    SwiftProxyNetwork: internal_api
+    SaharaApiNetwork: internal_api
+    HorizonNetwork: internal_api
+    MemcachedNetwork: internal_api
+    RabbitMqNetwork: internal_api
+    RedisNetwork: internal_api
+    MysqlNetwork: internal_api
+    CephClusterNetwork: internal_api
+    CephPublicNetwork: internal_api
+    ControllerHostnameResolveNetwork: internal_api
+    ComputeHostnameResolveNetwork: internal_api
+    BlockStorageHostnameResolveNetwork: internal_api
+    ObjectStorageHostnameResolveNetwork: internal_api
+    CephStorageHostnameResolveNetwork: internal_api
+  ExternalNetworkVip: 192.168.122.101
+  PublicVirtualFixedIPs: [{'ip_address':'192.168.122.100'}]
+  HostnameMap:
+    overcloud-controller-0: summit-controller01
+    overcloud-controller-1: summit-controller02
+    overcloud-controller-2: summit-controller03
+    overcloud-compute-0: summit-compute01
+    overcloud-compute-1: summit-compute02
+    overcloud-cephstorage-0: summit-ceph01
+    overcloud-cephstorage-1: summit-ceph02
+    overcloud-cephstorage-2: summit-ceph03
+    overcloud-networker-0: summit-networker
+  OvercloudNetworkerFlavor: networker
+  NetworkerCount: 1
+  NeutronExternalNetworkBridge: "br-ex"
+  InternalApiNetCidr: 172.17.1.0/24
+  InternalApiAllocationPools: [{'start': '172.17.1.10', 'end': '172.17.1.200'}]
+  InternalApiNetworkVlanID: 101
+  ExternalNetCidr: 192.168.122.0/24
+  ExternalAllocationPools: [{'start': '192.168.122.102', 'end': '192.168.122.129'}]
+  ExternalInterfaceDefaultRoute: 192.168.122.1
+  ControlPlaneSubnetCidr: "24"
+  ControlPlaneDefaultRoute: 172.16.0.1
+  EC2MetadataIp: 172.16.0.1
+  DnsServers: ['192.168.122.1', '8.8.8.8']
