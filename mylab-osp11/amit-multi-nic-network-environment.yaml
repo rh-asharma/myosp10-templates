@@ -1,0 +1,139 @@
+resource_registry:
+  # Specify the relative/absolute path to the config files you want to use for override the default.
+  OS::TripleO::Compute::Net::SoftwareConfig: nic-configs/compute.yaml
+  OS::TripleO::Controller::Net::SoftwareConfig: nic-configs/controller.yaml
+  OS::TripleO::CephStorage::Net::SoftwareConfig: nic-configs/ceph-storage.yaml
+
+  #OS::TripleO::NodeUserData: amit-custom/amit-custom-script.yaml
+  
+  #OS::TripleO::Services::CephMon: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-mon.yaml
+  #OS::TripleO::Services::CephOSD: /usr/share/openstack-tripleo-heat-templates/puppet/services/ceph-osd.yaml
+
+
+  # Network isolation configuration
+  # Service section
+  # If some service should be disable, use the following example
+  # OS::TripleO::Network::Management: OS::Heat::None
+  OS::TripleO::Network::External: /usr/share/openstack-tripleo-heat-templates/network/external.yaml
+  OS::TripleO::Network::InternalApi: /usr/share/openstack-tripleo-heat-templates/network/internal_api.yaml
+  OS::TripleO::Network::Tenant: /usr/share/openstack-tripleo-heat-templates/network/tenant.yaml
+  OS::TripleO::Network::StorageMgmt: /usr/share/openstack-tripleo-heat-templates/network/storage_mgmt.yaml
+  OS::TripleO::Network::Storage: /usr/share/openstack-tripleo-heat-templates/network/storage.yaml
+  
+  # Port assignments for the VIPs
+  OS::TripleO::Network::Ports::ExternalVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Network::Ports::InternalApiVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Network::Ports::RedisVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/vip.yaml
+  OS::TripleO::Network::Ports::StorageVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::Network::Ports::StorageMgmtVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+
+  # Port assignments for the controller role
+  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Controller::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
+  OS::TripleO::Controller::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+  #OS::TripleO::Controller::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::Controller::NodeUserData: amit-custom/amit-swap.yaml
+  
+  # Port assignments for the compute role
+  OS::TripleO::Compute::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external.yaml
+  OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::Compute::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant.yaml
+  OS::TripleO::Compute::Ports::ManagementPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  OS::TripleO::Compute::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::Compute::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+  #OS::TripleO::Compute::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::Compute::NodeUserData: amit-custom/amit-swap.yaml
+  
+  # Port assignments for service virtual IPs for the controller role
+  OS::TripleO::Controller::Ports::RedisVipPort: /usr/share/openstack-tripleo-heat-templates/network/ports/vip.yaml
+
+  # Port assignments for the ceph storage role
+  OS::TripleO::CephStorage::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  OS::TripleO::CephStorage::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  OS::TripleO::CephStorage::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::CephStorage::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+  OS::TripleO::CephStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  #OS::TripleO::CephStorage::Ports::ManagementPort: ../network/ports/management.yaml
+  #OS::TripleO::CephStorage::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::CephStorage::NodeUserData: amit-custom/amit-swap.yaml
+  
+  # Port assignments for the block storage role
+  OS::TripleO::BlockStorage::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  OS::TripleO::BlockStorage::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api.yaml
+  OS::TripleO::BlockStorage::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage.yaml
+  OS::TripleO::BlockStorage::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt.yaml
+  OS::TripleO::BlockStorage::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/noop.yaml
+  #OS::TripleO::BlockStorage::Ports::ManagementPort: ../network/ports/management.yaml
+  #OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-custom-script.yaml
+  #OS::TripleO::BlockStorage::NodeUserData: amit-custom/amit-swap.yaml
+    
+parameter_defaults:
+  
+  # Customize all these values to match the local environment
+  InternalApiNetCidr: 192.168.101.0/24
+  TenantNetCidr: 192.168.102.0/24
+  StorageNetCidr: 192.168.103.0/24
+  StorageMgmtNetCidr: 192.168.104.0/24
+  ExternalNetCidr: 192.168.105.0/24
+  
+  # CIDR subnet mask length for provisioning network
+  ControlPlaneSubnetCidr: '24'
+  
+  InternalApiAllocationPools: [{'start': '192.168.101.100', 'end': '192.168.101.200'}]
+  TenantAllocationPools: [{'start': '192.168.102.100', 'end': '192.168.102.200'}]
+  StorageAllocationPools: [{'start': '192.168.103.100', 'end': '192.168.103.200'}]
+  StorageMgmtAllocationPools: [{'start': '192.168.104.100', 'end': '192.168.104.200'}]
+  # Use an External allocation pool which will leave room for floating IPs
+  ExternalAllocationPools: [{'start': '192.168.105.100', 'end': '192.168.105.200'}]
+  
+  # Set to the router gateway on the external network
+  ExternalInterfaceDefaultRoute: 192.168.105.254
+  
+  # Gateway router for the provisioning network (or Undercloud IP)
+  ControlPlaneDefaultRoute: 192.168.10.254
+  
+  # Generally the IP of the Undercloud
+  EC2MetadataIp: 192.168.10.4
+  
+  InternalApiNetworkVlanID: 101
+  TenantNetworkVlanID: 102
+  StorageNetworkVlanID: 103
+  StorageMgmtNetworkVlanID: 104
+  ExternalNetworkVlanID: 105
+  
+  #ControllerServices:
+    #- OS::TripleO::Services::CephMon
+  #CephStorageServices:
+    #- OS::TripleO::Services::CephOSD
+  
+  # Define the DNS servers (maximum 2) for the overcloud nodes
+  DnsServers: ["192.168.122.1","8.8.8.8"]
+  
+  # May set to br-ex if using floating IPs only on native VLAN on bridge br-ex
+  #NeutronExternalNetworkBridge: "''"
+  # The tunnel type for the tenant network (vxlan or gre). Set to '' to disable tunneling.
+  #NeutronTunnelTypes: ''
+  NeutronTunnelTypes: 'vxlan'
+  # The tenant network type for Neutron (vlan or vxlan).
+  #NeutronNetworkType: 'vlan'
+  NeutronNetworkType: 'vxlan'
+  # The OVS logical->physical bridge mappings to use.
+  #NeutronBridgeMappings: 'datacentre:br-ex,tenant:br-tenant'
+  # The Neutron ML2 and OpenVSwitch vlan mapping range to support.
+  #NeutronNetworkVLANRanges: 'datacentre:22:22,tenant:25:25'
+  # Nova flavor to use.
+  #OvercloudControlFlavor: baremetal
+  #OvercloudComputeFlavor: baremetal
+  # Number of nodes to deploy.
+  #ControllerCount: 1
+  #ComputeCount: 1
+
+  # Sets overcloud nodes custom names
+  # http://docs.openstack.org/developer/tripleo-docs/advanced_deployment/node_placement.html#custom-hostnames
+  ControllerHostnameFormat: 'controller-%index%'
+  ComputeHostnameFormat: 'compute-%index%'
+  CephStorageHostnameFormat: 'ceph-%index%'
+  ObjectStorageHostnameFormat: 'swift-%index%'

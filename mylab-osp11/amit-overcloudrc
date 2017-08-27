@@ -1,0 +1,13 @@
+# Clear any old environment that may conflict.
+for key in $( set | awk '{FS="="}  /^OS_/ {print $1}' ); do unset $key ; done
+export OS_USERNAME=admin
+export NOVA_VERSION=1.1
+export OS_PROJECT_NAME=admin
+export OS_PASSWORD=b2PfjcyFCAwGm8rUYZ3ycvX2b
+export OS_NO_CACHE=True
+export COMPUTE_API_VERSION=1.1
+export no_proxy=,192.168.105.103,192.168.10.8
+export OS_CLOUDNAME=amit-overcloud
+export OS_AUTH_URL=http://192.168.105.103:5000/v2.0
+export OS_AUTH_TYPE=password
+export PYTHONWARNINGS="ignore:Certificate has no, ignore:A true SSLContext object is not available"

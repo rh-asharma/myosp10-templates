@@ -1,0 +1,924 @@
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: 081ff317-ee53-4451-b714-d3838d3ddb49
+Plan updated
+Deploying templates in the directory /tmp/tripleoclient-HvVcwx/tripleo-heat-templates
+Started Mistral Workflow tripleo.deployment.v1.deploy_plan. Execution ID: 2869a3ca-fc31-4f39-bcf5-a03ae4a0ce72
+2017-08-24 08:59:02Z [amit-overcloud]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:02Z [amit-overcloud.HeatAuthEncryptionKey]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.RabbitCookie]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.PcsdPassword]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.HorizonSecret]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.MysqlRootPassword]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.ServiceNetMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.RabbitCookie]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:02Z [amit-overcloud.ServiceNetMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:02Z [amit-overcloud.PcsdPassword]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.HorizonSecret]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.NetworkExtraConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.ServiceNetMap.ServiceNetMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.MysqlRootPassword]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.InternalNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.ServiceNetMap.ServiceNetMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.HeatAuthEncryptionKey]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:02Z [amit-overcloud.ServiceNetMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:02Z [amit-overcloud.DefaultPasswords]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.InternalNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:02Z [amit-overcloud.Networks.InternalNetwork.InternalApiNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.ManagementNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.StorageNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:02Z [amit-overcloud.Networks.StorageMgmtNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:03Z [amit-overcloud.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.ExternalNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.StorageNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:03Z [amit-overcloud.Networks.StorageNetwork.StorageNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.ExternalNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:03Z [amit-overcloud.Networks.ExternalNetwork.ExternalNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.NetworkExtraConfig]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.ManagementNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:03Z [amit-overcloud.Networks.TenantNetwork]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:03Z [amit-overcloud.Networks.TenantNetwork.TenantNetwork]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:03Z [amit-overcloud.ServiceNetMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:03Z [amit-overcloud.DefaultPasswords]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:04Z [amit-overcloud.Networks.StorageNetwork.StorageNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:04Z [amit-overcloud.Networks.StorageNetwork.StorageSubnet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:04Z [amit-overcloud.Networks.StorageMgmtNetwork.StorageMgmtNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.StorageMgmtNetwork.StorageMgmtSubnet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.ExternalNetwork.ExternalNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.InternalNetwork.InternalApiNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.TenantNetwork.TenantNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.TenantNetwork.TenantSubnet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.ExternalNetwork.ExternalSubnet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:05Z [amit-overcloud.Networks.InternalNetwork.InternalApiSubnet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:06Z [amit-overcloud.Networks.StorageNetwork.StorageSubnet]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:06Z [amit-overcloud.Networks.StorageNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:07Z [amit-overcloud.Networks.StorageMgmtNetwork.StorageMgmtSubnet]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.StorageMgmtNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:07Z [amit-overcloud.Networks.StorageMgmtNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.StorageNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.InternalNetwork.InternalApiSubnet]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.InternalNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:07Z [amit-overcloud.Networks.TenantNetwork.TenantSubnet]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.TenantNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:07Z [amit-overcloud.Networks.ExternalNetwork.ExternalSubnet]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:07Z [amit-overcloud.Networks.ExternalNetwork]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:08Z [amit-overcloud.Networks.ExternalNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:08Z [amit-overcloud.Networks.InternalNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:08Z [amit-overcloud.Networks.TenantNetwork]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:08Z [amit-overcloud.Networks]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:08Z [amit-overcloud.Networks]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:09Z [amit-overcloud.ControlVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:11Z [amit-overcloud.ControlVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:11Z [amit-overcloud.StorageVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:11Z [amit-overcloud.InternalApiVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:11Z [amit-overcloud.StorageVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:11Z [amit-overcloud.StorageVirtualIP.StoragePort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:11Z [amit-overcloud.StorageMgmtVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:11Z [amit-overcloud.InternalApiVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:11Z [amit-overcloud.StorageMgmtVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:12Z [amit-overcloud.RedisVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:12Z [amit-overcloud.InternalApiVirtualIP.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:12Z [amit-overcloud.PublicVirtualIP]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:12Z [amit-overcloud.RedisVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:12Z [amit-overcloud.PublicVirtualIP]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:12Z [amit-overcloud.StorageMgmtVirtualIP.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:12Z [amit-overcloud.StorageVirtualIP.StoragePort]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:12Z [amit-overcloud.StorageVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:13Z [amit-overcloud.PublicVirtualIP.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:13Z [amit-overcloud.RedisVirtualIP.VipPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:13Z [amit-overcloud.InternalApiVirtualIP.InternalApiPort]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:13Z [amit-overcloud.InternalApiVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:13Z [amit-overcloud.StorageVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:13Z [amit-overcloud.InternalApiVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.StorageMgmtVirtualIP.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.StorageMgmtVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:14Z [amit-overcloud.PublicVirtualIP.ExternalPort]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.PublicVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:14Z [amit-overcloud.StorageMgmtVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.PublicVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.RedisVirtualIP.VipPort]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:14Z [amit-overcloud.RedisVirtualIP]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:15Z [amit-overcloud.VipMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:15Z [amit-overcloud.VipMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:16Z [amit-overcloud.VipMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:16Z [amit-overcloud.VipMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:16Z [amit-overcloud.VipMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:16Z [amit-overcloud.RedisVirtualIP]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:16Z [amit-overcloud.VipMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:17Z [amit-overcloud.EndpointMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:17Z [amit-overcloud.VipHosts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:18Z [amit-overcloud.EndpointMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:18Z [amit-overcloud.VipHosts]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:19Z [amit-overcloud.CephStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:19Z [amit-overcloud.ControllerServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:19Z [amit-overcloud.CephStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:19Z [amit-overcloud.CephStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:19Z [amit-overcloud.CephStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:19Z [amit-overcloud.ObjectStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:19Z [amit-overcloud.ControllerServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:19Z [amit-overcloud.ControllerServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ComputeServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ControllerServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ObjectStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:20Z [amit-overcloud.ObjectStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.CephStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:20Z [amit-overcloud.CephStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:20Z [amit-overcloud.ObjectStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:20Z [amit-overcloud.CephStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.BlockStorageServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ComputeServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:20Z [amit-overcloud.CephStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ComputeServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.CephStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:20Z [amit-overcloud.ComputeServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.EndpointMapData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.BlockStorageServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:21Z [amit-overcloud.BlockStorageServiceChain.LoggingConfiguration]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.BlockStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.CephStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.BlockStorageServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ComputeServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:21Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.EndpointMapData]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ComputeServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ComputeServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ComputeServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ComputeServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:22Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ControllerServiceChain.LoggingConfiguration]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.CephStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:23Z [amit-overcloud.ComputeServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.CephStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.CephStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ObjectStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.19]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.22]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ObjectStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.17]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.20]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.18]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.BlockStorageServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.15]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.BlockStorageServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.16]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:24Z [amit-overcloud.ComputeServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.21]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.14]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ComputeServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.CephStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.CephStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:25Z [amit-overcloud.BlockStorageServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.BlockStorageServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ObjectStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:25Z [amit-overcloud.ObjectStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:25Z [amit-overcloud.ControllerServiceChain.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:25Z [amit-overcloud.ControllerServiceChain.ServiceChain.94]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.52]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ComputeServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.31]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ComputeServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ObjectStorageServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.77]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.46]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ComputeServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:26Z [amit-overcloud.CephStorageServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.68]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:26Z [amit-overcloud.BlockStorageServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:26Z [amit-overcloud.BlockStorageServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:26Z [amit-overcloud.ControllerServiceChain.ServiceChain.59]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ComputeServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ComputeServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.27]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.74]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.BlockStorageServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.91]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.39]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.82]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.61]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.41]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:27Z [amit-overcloud.ControllerServiceChain.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ComputeServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ComputeServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:28Z [amit-overcloud.ControllerServiceChain.ServiceChain.34]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ControllerServiceChain.ServiceChain.23]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ComputeServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ControllerServiceChain.ServiceChain.80]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ControllerServiceChain.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:28Z [amit-overcloud.ControllerServiceChain.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.54]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.25]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.56]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.75]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.86]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.55]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.45]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:29Z [amit-overcloud.ControllerServiceChain.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.53]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.90]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.36]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.28]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.44]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.66]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.88]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.71]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.43]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:30Z [amit-overcloud.ControllerServiceChain.ServiceChain.50]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.84]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.29]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.73]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.95]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.32]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.96]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:31Z [amit-overcloud.ControllerServiceChain.ServiceChain.60]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.69]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.62]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.42]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.89]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.38]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.83]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.33]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.48]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:32Z [amit-overcloud.ControllerServiceChain.ServiceChain.58]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.37]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.78]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.49]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.24]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.81]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.63]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.51]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.26]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:33Z [amit-overcloud.ControllerServiceChain.ServiceChain.47]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.30]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.87]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.65]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.40]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.57]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.93]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.79]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.85]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.92]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:34Z [amit-overcloud.ControllerServiceChain.ServiceChain.67]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.76]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.35]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.64]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:35Z [amit-overcloud.ControllerServiceChain.ServiceChain.70]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.72]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.59]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.45]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.71]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.11]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.79]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.39]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.82]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.7]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.61]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.0]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.34]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.23]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.1]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.15]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.54]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.86]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.55]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.65]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.22]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.53]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.90]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.44]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.88]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.77]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.5]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.43]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.50]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.29]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.96]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.68]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.42]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.89]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.37]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.49]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.2]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.81]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.63]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.26]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.47]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.3]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.20]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.48]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.31]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.85]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.17]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.76]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.72]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.57]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.21]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.16]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.14]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.91]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.13]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.69]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.80]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:36Z [amit-overcloud.ControllerServiceChain.ServiceChain.62]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.18]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.25]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.56]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.75]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.94]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.38]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.60]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.36]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.28]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.66]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.84]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.6]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.74]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.19]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.73]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.95]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.12]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.27]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.10]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.33]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.83]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.58]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.78]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.52]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.24]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.51]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.41]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.30]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.4]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.87]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.40]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.93]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.46]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.32]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.92]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.9]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:37Z [amit-overcloud.ControllerServiceChain.ServiceChain.64]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:38Z [amit-overcloud.ControllerServiceChain.ServiceChain.67]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:38Z [amit-overcloud.ControllerServiceChain.ServiceChain.8]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:38Z [amit-overcloud.ControllerServiceChain.ServiceChain.70]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:38Z [amit-overcloud.ControllerServiceChain.ServiceChain.35]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:38Z [amit-overcloud.ControllerServiceChain.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:39Z [amit-overcloud.ControllerServiceChain.ServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:39Z [amit-overcloud.ControllerServiceChain.ServiceServerMetadataHook]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:40Z [amit-overcloud.ControllerServiceChain.ServiceServerMetadataHook]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:40Z [amit-overcloud.ControllerServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:40Z [amit-overcloud.ControllerServiceChain]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:55Z [amit-overcloud.BlockStorage]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:55Z [amit-overcloud.CephStorage]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:55Z [amit-overcloud.Compute]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:55Z [amit-overcloud.Compute]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:55Z [amit-overcloud.ObjectStorage]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:55Z [amit-overcloud.Compute.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:55Z [amit-overcloud.Controller]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:56Z [amit-overcloud.Controller]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:56Z [amit-overcloud.Controller.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorage]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.BlockStorage]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorage]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.CephStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.BlockStorageIpListMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:57Z [amit-overcloud.ObjectStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.ObjectStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.NovaComputeUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.BlockStorageIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.NovaComputeUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0.UpdateConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.UpdateConfig]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Compute.0.NodeUserData]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0.ControllerUpgradeInitConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0.NodeAdminUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0.RoleUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:58Z [amit-overcloud.Controller.0.NodeUserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 08:59:59Z [amit-overcloud.Controller.0.ControllerUpgradeInitConfig]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:59Z [amit-overcloud.Controller.0.UpdateConfig]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:59Z [amit-overcloud.ObjectStorageIpListMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:59Z [amit-overcloud.CephStorageIpListMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:59Z [amit-overcloud.BlockStorageIpListMap]: CREATE_COMPLETE  state changed
+2017-08-24 08:59:59Z [amit-overcloud.Compute.0.RoleUserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:00Z [amit-overcloud.Controller.0.NodeUserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:00Z [amit-overcloud.Controller.0.RoleUserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:00Z [amit-overcloud.Compute.0.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:00Z [amit-overcloud.Compute.0.UserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:00:01Z [amit-overcloud.Controller.0.NodeAdminUserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:01Z [amit-overcloud.Controller.0.UserData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:00:01Z [amit-overcloud.Compute.0.UserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:02Z [amit-overcloud.Compute.0.NovaCompute]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:00:02Z [amit-overcloud.Controller.0.UserData]: CREATE_COMPLETE  state changed
+2017-08-24 09:00:02Z [amit-overcloud.Controller.0.Controller]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:36Z [amit-overcloud.Compute.0.NovaCompute]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:37Z [amit-overcloud.Compute.0.StoragePort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:37Z [amit-overcloud.Compute.0.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:38Z [amit-overcloud.Compute.0.ManagementPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:38Z [amit-overcloud.Compute.0.NetHostMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:39Z [amit-overcloud.Compute.0.TenantPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:39Z [amit-overcloud.Controller.0.Controller]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:39Z [amit-overcloud.Compute.0.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:39Z [amit-overcloud.Controller.0.InternalApiPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:40Z [amit-overcloud.Controller.0.NetHostMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:40Z [amit-overcloud.Compute.0.PreNetworkConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:40Z [amit-overcloud.Controller.0.StoragePort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:41Z [amit-overcloud.Controller.0.TenantPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:41Z [amit-overcloud.Compute.0.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:42Z [amit-overcloud.Controller.0.PreNetworkConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:43Z [amit-overcloud.Controller.0.StorageMgmtPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:43Z [amit-overcloud.Compute.0.ManagementPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:43Z [amit-overcloud.Compute.0.StoragePort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Compute.0.InternalApiPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Compute.0.NetHostMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Compute.0.TenantPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Compute.0.ExternalPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Compute.0.PreNetworkConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Controller.0.ExternalPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:44Z [amit-overcloud.Controller.0.ManagementPort]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:45Z [amit-overcloud.Compute.0.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.InternalApiPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.NetHostMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.ManagementPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.TenantPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.StoragePort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.StorageMgmtPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.PreNetworkConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:46Z [amit-overcloud.Controller.0.ExternalPort]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:47Z [amit-overcloud.Compute.0.NetIpMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:48Z [amit-overcloud.Compute.0.NetworkConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:49Z [amit-overcloud.Controller.0.NetworkConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:49Z [amit-overcloud.Compute.0.NetIpMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:49Z [amit-overcloud.Compute.0.NetworkConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:49Z [amit-overcloud.Compute.0.NetworkDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:49Z [amit-overcloud.Controller.0.NetIpMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:50Z [amit-overcloud.Compute.0.NovaComputeConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:51Z [amit-overcloud.Controller.0.NetIpMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:51Z [amit-overcloud.Controller.0.NetworkConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:02:51Z [amit-overcloud.Controller.0.NetworkDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:02:51Z [amit-overcloud.Compute.0.NovaComputeConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:31Z [amit-overcloud.Compute.0.NetworkDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 026a05c5-3653-4e9f-824f-42b8c07202b5 succeeded
+2017-08-24 09:03:31Z [amit-overcloud.Compute.0.NetworkDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:31Z [amit-overcloud.Compute.0.NovaComputeUpgradeInitDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:32Z [amit-overcloud.Compute.0.UpdateDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:39Z [amit-overcloud.Controller.0.NetworkDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment fc197ad4-c56a-4810-b1dc-acf9d4b9b61e succeeded
+2017-08-24 09:03:39Z [amit-overcloud.Controller.0.NetworkDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:39Z [amit-overcloud.Controller.0.ControllerUpgradeInitDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:40Z [amit-overcloud.Controller.0.NodeTLSCAData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:40Z [amit-overcloud.Controller.0.UpdateDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:42Z [amit-overcloud.Compute.0.NovaComputeUpgradeInitDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment ff98bdbc-187e-4627-b39e-86ffbd177214 succeeded
+2017-08-24 09:03:43Z [amit-overcloud.Controller.0.NodeTLSCAData]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:43Z [amit-overcloud.Controller.0.NodeTLSData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:43Z [amit-overcloud.Compute.0.NovaComputeUpgradeInitDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:44Z [amit-overcloud.Controller.0.NodeTLSData]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:44Z [amit-overcloud.Controller.0.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:45Z [amit-overcloud.Controller.0.ControllerConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:52Z [amit-overcloud.Controller.0.ControllerUpgradeInitDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment df4f2b3f-35b1-4e79-91fe-ebdd6ec9f2b9 succeeded
+2017-08-24 09:03:52Z [amit-overcloud.Controller.0.ControllerUpgradeInitDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:54Z [amit-overcloud.Compute.0.UpdateDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 995ba2d9-f5d4-4d1d-83f9-6354b7bf7375 succeeded
+2017-08-24 09:03:54Z [amit-overcloud.Compute.0.UpdateDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:55Z [amit-overcloud.Compute.0.NovaComputeDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:03:56Z [amit-overcloud.Controller.0.UpdateDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment b4d30600-8fe9-4cf0-9f2a-9951b3dd2bb5 succeeded
+2017-08-24 09:03:57Z [amit-overcloud.Controller.0.UpdateDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:03:57Z [amit-overcloud.Controller.0.ControllerDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:07Z [amit-overcloud.Compute.0.NovaComputeDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment c49c5c73-00ab-48e8-a56c-5d00de29873a succeeded
+2017-08-24 09:04:08Z [amit-overcloud.Controller.0.ControllerDeployment]: SIGNAL_IN_PROGRESS  Signal: deployment 0285855a-0597-4878-9c44-79f2d132fa79 succeeded
+2017-08-24 09:04:08Z [amit-overcloud.Compute.0.NovaComputeDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:08Z [amit-overcloud.Compute.0.NodeTLSCAData]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:08Z [amit-overcloud.Compute.0.SshHostPubKey]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:08Z [amit-overcloud.Compute.0.ComputeExtraConfigPre]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:09Z [amit-overcloud.Controller.0.ControllerDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:09Z [amit-overcloud.Controller.0.ControllerExtraConfigPre]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:09Z [amit-overcloud.Controller.0.SshHostPubKey]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:09Z [amit-overcloud.Compute.0.NodeTLSCAData]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:09Z [amit-overcloud.Compute.0.ComputeExtraConfigPre]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:10Z [amit-overcloud.Compute.0.NodeExtraConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:10Z [amit-overcloud.Controller.0.ControllerExtraConfigPre]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:10Z [amit-overcloud.Controller.0.NodeExtraConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:11Z [amit-overcloud.Compute.0.NodeExtraConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:11Z [amit-overcloud.Controller.0.NodeExtraConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:19Z [amit-overcloud.Controller.0.SshHostPubKey]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:19Z [amit-overcloud.Controller.0]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:20Z [amit-overcloud.Compute.0.SshHostPubKey]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:20Z [amit-overcloud.Compute.0]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:20Z [amit-overcloud.Controller.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:20Z [amit-overcloud.Controller]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:20Z [amit-overcloud.Controller]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:20Z [amit-overcloud.Compute.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:20Z [amit-overcloud.Compute]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:24Z [amit-overcloud.AllNodesValidationConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:24Z [amit-overcloud.ControllerIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:24Z [amit-overcloud.AllNodesValidationConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:24Z [amit-overcloud.AllNodesValidationConfig.AllNodesValidationsImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:24Z [amit-overcloud.AllNodesValidationConfig.AllNodesValidationsImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:24Z [amit-overcloud.AllNodesValidationConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:25Z [amit-overcloud.ControllerIpListMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:25Z [amit-overcloud.Compute]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:25Z [amit-overcloud.AllNodesValidationConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:28Z [amit-overcloud.ComputeIpListMap]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.hostsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap.NetIpMapValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap.EnabledServicesValue]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap.NetIpMapValue]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap.EnabledServicesValue]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:29Z [amit-overcloud.ComputeIpListMap]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:29Z [amit-overcloud.hostsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:29Z [amit-overcloud.SshKnownHostsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.hostsConfig.hostsConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:29Z [amit-overcloud.hostsConfig.hostsConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:29Z [amit-overcloud.hostsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:30Z [amit-overcloud.hostsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:30Z [amit-overcloud.ComputeIpListMap]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:30Z [amit-overcloud.SshKnownHostsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:30Z [amit-overcloud.ObjectStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:30Z [amit-overcloud.CephStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:30Z [amit-overcloud.ComputeHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:30Z [amit-overcloud.BlockStorageHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:30Z [amit-overcloud.ComputeHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:30Z [amit-overcloud.ComputeHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.BlockStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.ControllerSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.ObjectStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.ControllerSshKnownHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:31Z [amit-overcloud.ControllerSshKnownHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.ComputeSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:31Z [amit-overcloud.ComputeSshKnownHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:31Z [amit-overcloud.ComputeSshKnownHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:33Z [amit-overcloud.allNodesConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:34Z [amit-overcloud.allNodesConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:34Z [amit-overcloud.CephStorageSshKnownHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:34Z [amit-overcloud.ControllerHostsDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:34Z [amit-overcloud.ControllerHostsDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:34Z [amit-overcloud.ControllerHostsDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:34Z [amit-overcloud.allNodesConfig.allNodesConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:35Z [amit-overcloud.allNodesConfig.allNodesConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.allNodesConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:35Z [amit-overcloud.CephStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.BlockStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.BlockStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.ObjectStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.CephStorageSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.ObjectStorageHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:35Z [amit-overcloud.allNodesConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:42Z [amit-overcloud.ComputeHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment d5b5478d-66ee-497e-ba8c-76e129cd4ac7 succeeded
+2017-08-24 09:04:43Z [amit-overcloud.ComputeHostsDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:43Z [amit-overcloud.ComputeHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:43Z [amit-overcloud.ControllerSshKnownHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 9b18cc09-00bf-489f-b105-6fffe0780fb6 succeeded
+2017-08-24 09:04:43Z [amit-overcloud.ControllerSshKnownHostsDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:43Z [amit-overcloud.ControllerSshKnownHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:44Z [amit-overcloud.ControllerSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:44Z [amit-overcloud.ComputeHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:44Z [amit-overcloud.ComputeSshKnownHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 7d515a60-1daf-488f-b330-6d2d14ad4eae succeeded
+2017-08-24 09:04:45Z [amit-overcloud.ComputeSshKnownHostsDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:45Z [amit-overcloud.ComputeSshKnownHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:46Z [amit-overcloud.ComputeSshKnownHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:51Z [amit-overcloud.ControllerHostsDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 340d2a72-9c60-4920-869d-6a9d7f593a15 succeeded
+2017-08-24 09:04:52Z [amit-overcloud.ControllerHostsDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ControllerHostsDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:04:52Z [amit-overcloud.ControllerHostsDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ComputeAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ComputeAllNodesDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:52Z [amit-overcloud.ObjectStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ComputeAllNodesDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.CephStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.BlockStorageAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ControllerAllNodesDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:52Z [amit-overcloud.ControllerAllNodesDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:04:52Z [amit-overcloud.ControllerAllNodesDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:53Z [amit-overcloud.CephStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:53Z [amit-overcloud.ObjectStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:53Z [amit-overcloud.BlockStorageAllNodesDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:54Z [amit-overcloud.ObjectStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:54Z [amit-overcloud.CephStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:54Z [amit-overcloud.BlockStorageAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:04:55Z [amit-overcloud.ObjectStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:55Z [amit-overcloud.CephStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:04:55Z [amit-overcloud.BlockStorageAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:01Z [amit-overcloud.ControllerAllNodesDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment d6368dad-65b7-49e3-8e46-9d66094c76c2 succeeded
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesValidationDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:02Z [amit-overcloud.ControllerAllNodesValidationDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:08Z [amit-overcloud.ComputeAllNodesDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 8013c3a2-b738-4db7-b8a4-3cd5b0aa22f7 succeeded
+2017-08-24 09:05:08Z [amit-overcloud.ComputeAllNodesDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:08Z [amit-overcloud.ComputeAllNodesDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:09Z [amit-overcloud.ComputeAllNodesDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:09Z [amit-overcloud.ComputeAllNodesValidationDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:09Z [amit-overcloud.UpdateWorkflow]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:09Z [amit-overcloud.ComputeAllNodesValidationDeployment]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:10Z [amit-overcloud.ComputeAllNodesValidationDeployment.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:10Z [amit-overcloud.AllNodesDeploySteps]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.UpdateWorkflow]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStoragePreConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig.BlockStoragePuppetConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig.BlockStoragePuppetConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig.CephStoragePuppetConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.ControllerPreConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig.CephStoragePuppetConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig.DeployArtifacts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig.DeployArtifacts]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:11Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig.DeployArtifacts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.BlockStoragePreConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.BlockStoragePrePuppet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig.DeployArtifacts]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputePrePuppet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig.ObjectStoragePuppetConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig.ObjectStoragePuppetConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig.ControllerPuppetConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig.ControllerPuppetConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig.DeployArtifacts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStoragePrePuppet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig.DeployArtifacts]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy.SwiftRingDeployConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputePreConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy.SwiftRingDeployConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy.SwiftRingDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy.SwiftRingDeployConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ObjectStoragePreConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.ControllerAllNodesValidationDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 39a75d16-4ef9-47e5-b33b-3c14be1dae7a succeeded
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy.SwiftRingDeployConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy.SwiftRingDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig.DeployArtifacts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig.DeployArtifacts]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.CephStoragePrePuppet]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.ControllerAllNodesValidationDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet.ControllerPrePuppetMaintenanceModeConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:12Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:12Z [amit-overcloud.ControllerAllNodesValidationDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet.ControllerPrePuppetMaintenanceModeConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig.ComputePuppetConfigImpl]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet.ControllerPrePuppetMaintenanceModeDeployment]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig.ComputePuppetConfigImpl]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.CephStoragePreConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStoragePrePuppet]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig.DeployArtifacts]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStoragePrePuppet]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputePreConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig.DeployArtifacts]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.CephStorageConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStoragePreConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerPreConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.CephStoragePrePuppet]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputePrePuppet]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStoragePreConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.ControllerAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy.SwiftRingDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:13Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:14Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsDeploy]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.BlockStorageArtifactsDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.CephStorageArtifactsDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageSwiftRingDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageArtifactsDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.CephStorageDeployment_Step1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageDeployment_Step1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:15Z [amit-overcloud.AllNodesDeploySteps.BlockStorageDeployment_Step1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:16Z [amit-overcloud.AllNodesDeploySteps.BlockStorageDeployment_Step1]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:16Z [amit-overcloud.AllNodesDeploySteps.ObjectStorageDeployment_Step1]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:16Z [amit-overcloud.AllNodesDeploySteps.CephStorageDeployment_Step1]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:19Z [amit-overcloud.ComputeAllNodesValidationDeployment.0]: SIGNAL_IN_PROGRESS  Signal: deployment 1adf5add-fdb7-453f-bcc9-9fb18e1504e7 succeeded
+2017-08-24 09:05:20Z [amit-overcloud.ComputeAllNodesValidationDeployment.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:20Z [amit-overcloud.ComputeAllNodesValidationDeployment]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:20Z [amit-overcloud.ComputeAllNodesValidationDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:20Z [amit-overcloud.AllNodesExtraConfig]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:21Z [amit-overcloud.AllNodesExtraConfig]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:22Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy.SwiftRingDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:22Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:23Z [amit-overcloud.AllNodesDeploySteps.ControllerSwiftRingDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:28Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy.0]: SIGNAL_IN_PROGRESS  Signal: deployment 12d7aff4-f73a-4d93-a883-24c85229e6b3 succeeded
+2017-08-24 09:05:28Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:28Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:29Z [amit-overcloud.AllNodesDeploySteps.ComputeArtifactsDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:29Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:29Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:29Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:31Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy.0]: SIGNAL_IN_PROGRESS  Signal: deployment eaf5aa90-fb0c-4d23-ab64-f1cbeac190d4 succeeded
+2017-08-24 09:05:32Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy.0]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:32Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:32Z [amit-overcloud.AllNodesDeploySteps.ControllerArtifactsDeploy]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet.ControllerPrePuppetMaintenanceModeDeployment]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet]: CREATE_COMPLETE  Stack CREATE completed successfully
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerPrePuppet]: CREATE_COMPLETE  state changed
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerDeployment_Step1]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerDeployment_Step1]: CREATE_IN_PROGRESS  Stack CREATE started
+2017-08-24 09:05:33Z [amit-overcloud.AllNodesDeploySteps.ControllerDeployment_Step1.0]: CREATE_IN_PROGRESS  state changed
+2017-08-24 09:05:52Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1.0]: SIGNAL_IN_PROGRESS  Signal: deployment 8705a6ca-91dc-4466-ae67-a6b07b1e3414 failed (6)
+2017-08-24 09:05:52Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1.0]: CREATE_FAILED  Error: resources[0]: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 6
+2017-08-24 09:05:52Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1]: CREATE_FAILED  Resource CREATE failed: Error: resources[0]: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 6
+2017-08-24 09:05:53Z [amit-overcloud.AllNodesDeploySteps.ComputeDeployment_Step1]: CREATE_FAILED  Error: resources.ComputeDeployment_Step1.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 6
+2017-08-24 09:05:53Z [amit-overcloud.AllNodesDeploySteps.ControllerDeployment_Step1]: CREATE_FAILED  CREATE aborted
+2017-08-24 09:05:53Z [amit-overcloud.AllNodesDeploySteps]: CREATE_FAILED  Resource CREATE failed: Error: resources.ComputeDeployment_Step1.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 6
+2017-08-24 09:05:53Z [amit-overcloud.AllNodesDeploySteps]: CREATE_FAILED  Error: resources.AllNodesDeploySteps.resources.ComputeDeployment_Step1.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 6
+2017-08-24 09:05:53Z [amit-overcloud]: CREATE_FAILED  Resource CREATE failed: Error: resources.AllNodesDeploySteps.resources.ComputeDeployment_Step1.resources[0]: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 6
+
+ Stack amit-overcloud CREATE_FAILED 
+
