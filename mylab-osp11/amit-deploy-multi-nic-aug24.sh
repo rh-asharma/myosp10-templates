@@ -26,7 +26,7 @@ time openstack overcloud deploy --templates -e /home/stack/myosp10-templates/myl
 }
 
 function updateRHOSP {
-time yes "" | openstack overcloud update stack overcloud -i --templates \
+time yes "" | openstack overcloud update stack amit-overcloud -i --templates \
   -e /home/stack/myosp10-templates/mylab-osp11/amit-multi-nic-network-environment.yaml \
   -e /usr/share/openstack-tripleo-heat-templates/environments/storage-environment.yaml
 }
